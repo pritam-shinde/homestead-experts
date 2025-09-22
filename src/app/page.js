@@ -385,7 +385,7 @@ export default function Home() {
         </section>
 
         {/*  */}
-        <section style={{ backgroundColor: "#121b1f", color: "#fff", padding: "60px 20px 60px 170px" }}  >
+        <section style={{ backgroundColor: "#0E222A", color: "#fff", padding: "60px 20px 60px 170px" }}  >
           <div className="container-fluid">
 
             <div className="row mb-5">
@@ -721,11 +721,10 @@ export default function Home() {
                         </div>
                         <div className="contact-one__info__content">
                           <div className="contact-one__info__text ">
-                              <p className="main-footer__info__text">
+                            <p className="main-footer__info__text">
                               <a href="tel:+18772443703" aria-label="Call us at (877) 244-3703" className="text-white">(877) 244-3703</a>
                             </p>
-                            <br />
-                            {/* <a href="tel:+2195550114">+21 9555-0114</a> */}
+                            <a href="tel:+2195550114" aria-label="Call us at (877) 244-3703" className="text-white">+21 9555-0114</a>
                           </div>
                         </div>
                       </li>
@@ -738,11 +737,11 @@ export default function Home() {
                         </div>
                         <div className="contact-one__info__content">
                           <p className="contact-one__info__text">
-                            <a href="mailto:info@homesteadexperts.com" className="text-white">
-                                info@homesteadexperts.com
-                              </a>
+                            <a href="mailto:info@homesteadexperts.com" className="text-white fs-15">
+                              info@homesteadexperts.com
+                            </a>
                             <br />
-                            <a href="www.website.com" className="text-white">www.website.com</a>
+                            <a href="www.website.com" className="text-white fs-15">https://homesteadexperts.com/</a>
                           </p>
                         </div>
                       </li>
@@ -756,7 +755,7 @@ export default function Home() {
                         <div className="contact-one__info__content">
                           <p className="contact-one__info__text text-white" >
                             259 Nassau St. Suite 2 #552
-                           <br /> Princeton, NJ 08542 
+                            <br /> Princeton, NJ 08542
                           </p>
                         </div>
                       </li>
@@ -804,8 +803,8 @@ export default function Home() {
 
                       <div className="form-one__control form-one__control--full">
                         <button type="submit" className="procounsel-btn">
-                          <i>Case Deatils</i>
-                          <span>Case Deatils</span>
+                          <i>Case Details</i>
+                          <span>Case Details</span>
                         </button>
                       </div>
                     </div>

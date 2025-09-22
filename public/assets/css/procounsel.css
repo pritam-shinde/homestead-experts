@@ -253,6 +253,10 @@
   margin-right: 170px !important;
 }
 
+.fs-15 {
+  font-size: clamp(13px, 3vw, 15px);
+}
+
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
@@ -1243,7 +1247,8 @@ h6 {
 .team-one {
   position: relative;
   padding: 120px 0;
-  background-color: #050d22;
+  background-color: #0E222A;
+  /* background-color: #050d22; */
 }
 
 @media (max-width: 767px) {
@@ -4149,7 +4154,8 @@ h6 {
 .footer-widget__check label {
   position: relative;
   display: inline-block;
-  padding-left: 30px;
+  padding-left: 0px;
+  /* padding-left: 30px; */
   margin-right: 0px;
   margin-bottom: 0;
   font-weight: 500;
