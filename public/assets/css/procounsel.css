@@ -19649,6 +19649,12 @@ body.megamenu-popup-active .mobile-nav__content {
   .about-one__content__box {
     flex-direction: column;
   }
+  .case-strategy{
+    padding: 60px 20px 60px 20px !important; 
+  }
+  .case-strategy-container{
+     margin: 0px 85px !important;
+  }
 }
 
 @media (max-width: 991px) {
