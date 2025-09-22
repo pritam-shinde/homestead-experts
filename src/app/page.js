@@ -98,7 +98,7 @@ export default function Home() {
               <div className="main-slider-one__item">
                 <div
                   className="main-slider-one__bg bg-slider-1"
-                  style={{ backgroundImage: "url(assets/images/backgrounds/slider-1.png)" }}
+                  style={{ backgroundImage: "url(assets/images/backgrounds/slider-1-new.jpg)" }}
                 // style={{ backgroundImage: "url(assets/images/backgrounds/slider-1-1.jpg)"}}
                 ></div>
 
@@ -242,10 +242,7 @@ export default function Home() {
                     </h3>
                   </div>
                 </div>
-                <div
-                  className="col-lg-4 col-md-6 wow fadeInUp"
-                  data-wow-delay="00ms"
-                >
+                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                   <div className="feature-one__item feature-one__item--border-left justify-content-end">
                     <div className="feature-one__item__icon text-white">
                       <i className="icon-advice"></i>
@@ -388,14 +385,14 @@ export default function Home() {
         <section style={{ backgroundColor: "#0E222A", color: "#fff", padding: "60px 20px 60px 170px" }} className="case-strategy" >
           <div className="container-fluid case-strategy-container">
 
-            <div className="row mb-5">
-              <h2 className="sec-title__title" style={{ fontWeight: "700", color: "#fff" }}>
+            <div className="row mb-5 p-0">
+              <h2 className="sec-title__title p-0" style={{ fontWeight: "700", color: "#fff" }}>
                 End-to-End Support for <br /> Your Case Strategy
               </h2>
-              <h5 style={{ color: "#fff", fontWeight: "400", marginBottom: "20px" }} className="mt-2">
+              <h5 style={{ color: "#fff", fontWeight: "400", marginBottom: "20px" }} className="mt-2 p-0">
                 Compelling Subheadline Can Go Here
               </h5>
-              <div className="col-lg-7">
+              <div className="col-lg-7 p-0">
                 <p style={{ color: "#cfd2d4", lineHeight: "1.7" }}>
                   From expert selection to courtroom support, Homestead is built to serve your firm at every stage. We don’t just match you with a qualified expert, we manage the process with precision, insight, and discretion.
                   <br />
@@ -404,8 +401,8 @@ export default function Home() {
                 </p>
 
                 <div className="row" style={{ maxWidth: "680px", width: "100%" }}>
-                  <div className="col-12 col-md-12 mt-4">
-                    <div style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
+                  <div className="col-12 col-md-12 mt-4 p-3">
+                    <div className="case-strategy-cards" style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
                       <div style={{ width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px" }}>
                         <img src="/assets/images/backgrounds/support-1-icon.png" alt="support-1-icon" width={"80"} height={"80"} />
                       </div>
@@ -418,8 +415,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="col-12 col-md-12 mt-4">
-                    <div style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
+                  <div className="col-12 col-md-12 mt-4 p-3">
+                    <div className="case-strategy-cards" style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
                       <div style={{ width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px" }}>
                         <img src="/assets/images/backgrounds/support-2-icon.png" alt="support-2-icon" width={"80"} height={"80"} />
                       </div>
@@ -432,8 +429,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="col-12 col-md-12 mt-4">
-                    <div style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
+                  <div className="col-12 col-md-12 mt-4 p-3">
+                    <div className="case-strategy-cards" style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
                       <div style={{ width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px" }}>
                         <img src="/assets/images/backgrounds/support-3-icon.png" alt="support-3-icon" width={"80"} height={"80"} />
                       </div>
@@ -446,8 +443,8 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="col-12 col-md-12 mt-4">
-                    <div style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
+                  <div className="col-12 col-md-12 mt-4 p-3">
+                    <div className="case-strategy-cards" style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
                       <div style={{ width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px" }}>
                         <img src="/assets/images/backgrounds/support-4-icon.png" alt="support-4-icon" width={"80"} height={"80"} />
                       </div>
@@ -469,7 +466,7 @@ export default function Home() {
           </div>
         </section>
 
-      
+
         <Banner6Team />
 
         <section className="contact-one">
@@ -480,9 +477,9 @@ export default function Home() {
               <div className="row">
                 <div className="col-xl-6">
                   <div className="sec-title text-left">
-                    <div className="sec-title__tagline bw-split-in-up-fast d-inline-flex align-items-center gap-2 text-white">
+                    <div className="sec-title__tagline bw-split-in-up-fast d-inline-flex align-items-center gap-1 text-white">
                       <HammerIcon />
-                      Get Matched <br />
+                      <div>Get Matched</div><br />
                       <span> With Your Expert</span>{" "}
                     </div>
 
@@ -521,13 +518,22 @@ export default function Home() {
                             <i className="icon-glove"></i>
                           </span>
                         </div>
-                        <div className="contact-one__info__content">
-                          <p className="contact-one__info__text">
-                            <a href="mailto:info@homesteadexperts.com" className="text-white fs-15">
+                        {/* <div className="contact-one__info__content">
+                          <p className="contact-one__info__text d-flex flex-column align-items-center justify-content-center" >
+                            <a href="mailto:info@homesteadexperts.com" className="text-white ">
                               info@homesteadexperts.com
                             </a>
                             <br />
-                            <a href="www.website.com" className="text-white fs-15">https://homesteadexperts.com/</a>
+                            <a href="www.website.com" className="text-white ">https://homesteadexperts.com/</a>
+                          </p>
+                        </div> */}
+                        <div className="contact-one__info__content">
+                          <p className="contact-one__info__text" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 0 }}>
+                            <a href="mailto:info@homesteadexperts.com" className='fs-15 text-white'>
+                              info@homesteadexperts.com
+                            </a>
+                            {/* <br /> */}
+                            <a href="https://homesteadexperts.com/" className='fs-15 text-white'>https://homesteadexperts.com/</a>
                           </p>
                         </div>
                       </li>

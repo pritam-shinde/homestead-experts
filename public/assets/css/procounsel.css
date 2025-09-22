@@ -19649,11 +19649,13 @@ body.megamenu-popup-active .mobile-nav__content {
   .about-one__content__box {
     flex-direction: column;
   }
-  .case-strategy{
-    padding: 60px 20px 60px 20px !important; 
+
+  .case-strategy {
+    padding: 60px 20px 60px 20px !important;
   }
-  .case-strategy-container{
-     margin: 0px 85px !important;
+
+  .case-strategy-container {
+    margin: 0px 85px !important;
   }
 }
 
@@ -19692,6 +19694,10 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
+  .tailored-section {
+    height: 100vh !important;
+  }
+
   .tailored-redline {
     top: 42% !important;
     height: 14px !important;
@@ -19704,6 +19710,23 @@ body.megamenu-popup-active .mobile-nav__content {
 
   .feature-one {
     padding: 0px !important;
+  }
+
+  .case-strategy {
+    padding: 0px 20px 0px 20px !important;
+  }
+
+  .case-strategy-container {
+    margin: 0px !important;
+  }
+
+  .case-strategy-cards {
+    align-items: start !important;
+  }
+
+  .case-strategy-cards img {
+    width: 60px !important;
+    height: 60px !important;
   }
 }
 
