@@ -15,7 +15,8 @@
 .sticky-header--cloned,
 body,
 body.boxed-wrapper .page-wrapper {
-  background-color: var(--procounsel-black);
+  background-color: #050d22;
+  /* background-color: var(--procounsel-black); */
 }
 
 .client-carousel .client-carousel__one .client-carousel__one__item:hover,
@@ -80,7 +81,8 @@ body.boxed-wrapper .page-wrapper {
 
 .why-choose-one,
 .contact-one {
-  background-color: var(--procounsel-black2);
+  /* background-color: var(--procounsel-black2); */
+  background-color: #1b2748;
 }
 
 .why-choose-one__bg::after {

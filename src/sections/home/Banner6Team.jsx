@@ -38,7 +38,7 @@ const Banner6Team = () => {
     <section className="team-one">
       <div className="container">
         <div className="sec-title text-center">
-          <div className="sec-title__tagline bw-split-in-up-fast d-inline-flex align-items-center gap-2">
+          <div className="sec-title__tagline bw-split-in-up-fast d-inline-flex align-items-center gap-2 text-white">
            <HammerIcon/>
             Our Expertise
           </div>
