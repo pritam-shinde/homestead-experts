@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>
-          Home One || Procounsel || HTML Template For Lawyer & Law Firm
+          Homestead Experts - Medical Expert Witness Services
         </title>
         {/* <!-- favicons Icons --> */}
         <link
@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
         <meta
           name="description"
-          content="ProCounsel an ideal solution for all types of law firm and legal businesses. It is a professional and modern looking law HTML Template specially designed for lawyers, attorney, legal advisor, counsel, law firm, consulting business, legal office services and all other law related businesses & websites."
+          content="Homestead Experts provides trusted medical expert witness services, connecting legal teams with certified specialists across all medical fields."
         />
 
         {/* <!-- fonts --> */}
@@ -122,7 +122,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.variable} ${marcellus.variable} ${openSans.variable} ${plusJakarta.variable} custom-cursor`}
       >
-        <Header/>
+        <Header />
         {children}
         {/* <Footer/> */}
       </body>

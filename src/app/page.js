@@ -1,5 +1,7 @@
 "use client";
 
+import Banner1 from "@/sections/home/Banner1";
+import Banner4CaseStrategy from "@/sections/home/Banner4CaseStrategy";
 import Banner6Team from "@/sections/home/Banner6Team";
 import HammerIcon from "@/sections/icons/HammerIcon";
 import Image from "next/image";
@@ -73,143 +75,9 @@ export default function Home() {
       {/* <!-- /.preloader --> */}
 
       <div className="page-wrapper" >
-        {/* <Header /> */}
-
 
         {/* <!-- main-slider-start --> */}
-        <section className="main-slider-one" id="home" style={{ minHeight: "100vh", height: "100%", position: "relative" }}        >
-          <div
-            className="main-slider-one__carousel procounsel-owl__carousel owl-carousel"
-            data-owl-options='{
-		"loop": true,
-		"animateOut": "fadeOut",
-		"animateIn": "fadeIn",
-		"items": 1,
-		"autoplay": true,
-		"autoplayTimeout": 7000,
-		"smartSpeed": 1000,
-		"nav": false,
-        "navText": ["<span className=\"icon-arrow-left\"></span>","<span className=\"icon-arrow-right\"></span>"],
-		"dots": true,
-		"margin": 0
-	    }'
-          >
-            <div className="item">
-              <div className="main-slider-one__item">
-                <div
-                  className="main-slider-one__bg bg-slider-1"
-                  style={{ backgroundImage: "url(assets/images/backgrounds/slider-1-new.jpg)" }}
-                // style={{ backgroundImage: "url(assets/images/backgrounds/slider-1-1.jpg)"}}
-                ></div>
-
-                <div className="main-slider-one__overlay-one"></div>
-                <div className="main-slider-one__overlay-two"></div>
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-12 ">
-                      <div className="main-slider-one__content">
-                        <h2 className="main-slider-one__title">
-                          Trusted. Vetted.   <br /> Trial-Ready.
-                          {/* The Legal <br /> Defense Team <br /> You Truly Deserve */}
-                        </h2>
-
-                        <p className="main-slider-one__text">
-                          Homestead connects attorneys with leading expert witnesses across every discipline.
-                          <br /> Rigorously vetted, court-tested, and ready when you are.
-                        </p>
-
-                        <div className="main-slider-one__btn">
-                          <a href="#" className="procounsel-btn">
-                            {" "}
-                            <i> Discover More</i>
-                            <span> Discover More</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="item">
-              <div className="main-slider-one__item">
-                <div className="main-slider-one__bg" style={{ backgroundImage: "url(assets/images/backgrounds/slider-1-2-new.jpg)" }}></div>
-
-                <div className="main-slider-one__overlay-one"></div>
-                <div className="main-slider-one__overlay-two"></div>
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-12 ">
-                      <div className="main-slider-one__content">
-                        <h2 className="main-slider-one__title">
-                          Speed When It Matters Most.
-                          {/* The Legal <br /> Defense Team <br /> You Truly Deserve */}
-                        </h2>
-                        {/* <!-- slider-title --> */}
-
-                        <p className="main-slider-one__text">
-                          Your case can’t wait — neither should your search for the right expert. <br />
-                          We deliver tailored matches quickly, without sacrificing rigor or credibility.
-                        </p>
-                        {/* <!-- slider-text --> */}
-
-                        <div className="main-slider-one__btn">
-                          <a href="#" className="procounsel-btn">
-                            {" "}
-                            <i> Discover More</i>
-                            <span> Discover More</span>
-                          </a>
-                          {/* <!-- slider-btn --> */}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <!-- item --> */}
-
-            <div className="item">
-              <div className="main-slider-one__item">
-                <div
-                  className="main-slider-one__bg"
-                  style={{ backgroundImage: "url(assets/images/backgrounds/slider-3-new.jpg)" }}
-                ></div>
-
-                <div className="main-slider-one__overlay-one"></div>
-                <div className="main-slider-one__overlay-two"></div>
-                <div className="container">
-                  <div className="row">
-                    <div className="col-md-12 ">
-                      <div className="main-slider-one__content">
-                        <h2 className="main-slider-one__title">
-                          Experts in Every Specialty.<br /> Nationwide Reach.
-                        </h2>
-                        {/* <!-- slider-title --> */}
-
-                        <p className="main-slider-one__text">
-                          Our network of experts spans every field and jurisdiction. From medicine and engineering to finance and construction <br />
-                          Wherever your case takes you, we connect you with the right expert.
-                        </p>
-                        {/* <!-- slider-text --> */}
-
-                        <div className="main-slider-one__btn">
-                          <a href="#" className="procounsel-btn">
-                            {" "}
-                            <i> Discover More</i>
-                            <span> Discover More</span>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* <!-- item --> */}
-          </div>
-        </section>
+        <Banner1 />
 
         <section className="feature-one">
           <div className="container">
@@ -291,9 +159,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                {/* <!-- /.about-one__image --> */}
               </div>
-              {/* <!-- /.col-lg-5 --> */}
 
               <div className="col-lg-7 wow fadeInRight" data-wow-delay="300ms">
                 <div className="about-one__inner">
@@ -316,17 +182,13 @@ export default function Home() {
                             <path d="M14.3015 12.2813L14.0726 12.5102C13.9993 12.5825 13.9411 12.6687 13.9012 12.7637C13.8613 12.8586 13.8406 12.9605 13.8403 13.0635C13.84 13.1665 13.8601 13.2686 13.8993 13.3638C13.9386 13.459 13.9963 13.5455 14.0691 13.6184C14.142 13.6912 14.2285 13.7489 14.3237 13.7882C14.4189 13.8274 14.521 13.8475 14.624 13.8471C14.727 13.8468 14.8289 13.8261 14.9238 13.7863C15.0188 13.7464 15.105 13.6881 15.1773 13.6149L21.4273 7.36485C21.5716 7.21791 21.6521 7.01992 21.6511 6.81397C21.6502 6.60802 21.568 6.41077 21.4223 6.26514C21.2767 6.11951 21.0795 6.03729 20.8735 6.03635C20.6676 6.03542 20.4696 6.11586 20.3226 6.26016L20.0937 6.48907L16.5113 2.90602L16.7398 2.67735C16.8841 2.53041 16.9646 2.33242 16.9636 2.12647C16.9627 1.92052 16.8805 1.72327 16.7348 1.57764C16.5892 1.43201 16.392 1.34979 16.186 1.34885C15.9801 1.34792 15.7821 1.42836 15.6351 1.57266L9.38514 7.82266C9.31152 7.89496 9.25296 7.98112 9.21283 8.07618C9.17269 8.17123 9.15179 8.27329 9.15132 8.37647C9.15086 8.47965 9.17083 8.5819 9.2101 8.67731C9.24937 8.77273 9.30715 8.85942 9.38011 8.93238C9.45307 9.00534 9.53976 9.06312 9.63518 9.10239C9.73059 9.14166 9.83284 9.16163 9.93602 9.16117C10.0392 9.1607 10.1413 9.1398 10.2363 9.09966C10.3314 9.05953 10.4175 9.00097 10.4898 8.92735L10.7187 8.69844L10.7859 8.76559L1.18201 18.3695C0.953685 18.5955 0.772269 18.8644 0.648189 19.1608C0.524109 19.4571 0.459812 19.7751 0.458992 20.0963C0.458172 20.4176 0.520846 20.7359 0.643411 21.0328C0.765976 21.3298 0.946017 21.5996 1.17319 21.8268C1.40036 22.054 1.67018 22.234 1.96715 22.3566C2.26412 22.4791 2.58239 22.5418 2.90365 22.541C3.22492 22.5402 3.54286 22.4759 3.8392 22.3518C4.13554 22.2277 4.40444 22.0463 4.63045 21.818L14.2344 12.2141L14.3015 12.2813Z" />
                           </svg>
                         </div>
-                        {/* About Us */}
                         Experts You Can Build On
                       </div>
-                      {/* <!-- /.sec-title__tagline --> */}
 
                       <h3 className="sec-title__title bw-split-in-up">
                         Credibility You Can Rely On, <span>Coast to Coast</span>
                       </h3>
-                      {/* <!-- /.sec-title__title --> */}
                     </div>
-                    {/* <!-- /.sec-title --> */}
 
                     <p className="about-one__content__text">
                       Every expert in our network is hand-vetted for qualifications, credibility, and courtroom readiness. With national reach and specialized knowledge across disciplines, we match you with professionals who support your case with clarity and conviction.
@@ -345,22 +207,17 @@ export default function Home() {
                             <span className="icon-check"></span>Trial-Tested Experience
                           </li>
                         </ul>
-                        <a href="about.html" className="procounsel-btn">
+                        <a href="#" className="procounsel-btn">
                           <i>SPEAK TO AN EXPERT</i>
                           <span>SPEAK TO AN EXPERT</span>
                         </a>
                       </div>
                     </div>
-                    {/* <!-- box --> */}
                   </div>
-                  {/* <!-- /.why-choose-two__content --> */}
                 </div>
               </div>
-              {/* <!-- /.col-lg-7 --> */}
             </div>
-            {/* <!-- /.row --> */}
           </div>
-          {/* <!-- /.container --> */}
         </section>
 
         {/*Tailored Section  */}
@@ -381,92 +238,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/*  */}
-        <section style={{ backgroundColor: "#0E222A", color: "#fff", padding: "60px 20px 60px 170px" }} className="case-strategy" >
-          <div className="container-fluid case-strategy-container">
+        {/*case strategy  */}
+        <Banner4CaseStrategy />
 
-            <div className="row mb-5 p-0">
-              <h2 className="sec-title__title p-0" style={{ fontWeight: "700", color: "#fff" }}>
-                End-to-End Support for <br /> Your Case Strategy
-              </h2>
-              <h5 style={{ color: "#fff", fontWeight: "400", marginBottom: "20px" }} className="mt-2 p-0">
-                Compelling Subheadline Can Go Here
-              </h5>
-              <div className="col-lg-7 p-0">
-                <p style={{ color: "#cfd2d4", lineHeight: "1.7" }}>
-                  From expert selection to courtroom support, Homestead is built to serve your firm at every stage. We don’t just match you with a qualified expert, we manage the process with precision, insight, and discretion.
-                  <br />
-                  <br />
-                  Our team goes beyond static directories, actively sourcing the right experts, handling coordination, and ensuring every detail is buttoned up so you can stay focused on winning the case, not chasing down logistics.
-                </p>
-
-                <div className="row" style={{ maxWidth: "680px", width: "100%" }}>
-                  <div className="col-12 col-md-12 mt-4 p-3">
-                    <div className="case-strategy-cards" style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
-                      <div style={{ width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px" }}>
-                        <img src="/assets/images/backgrounds/support-1-icon.png" alt="support-1-icon" width={"80"} height={"80"} />
-                      </div>
-                      <div>
-                        <h5 style={{ fontWeight: "600", marginBottom: "10px", color: "#fff" }}>Intake & Case Assessment</h5>
-                        <p style={{ color: "#cfd2d4" }}>
-                          We start by understanding your case and the type of expertise you need. Our team listens carefully and gathers key details to ensure the search is targeted and precise.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-12 col-md-12 mt-4 p-3">
-                    <div className="case-strategy-cards" style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
-                      <div style={{ width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px" }}>
-                        <img src="/assets/images/backgrounds/support-2-icon.png" alt="support-2-icon" width={"80"} height={"80"} />
-                      </div>
-                      <div>
-                        <h5 style={{ fontWeight: "600", marginBottom: "10px", color: "#fff" }}>Expert Search & Vetting</h5>
-                        <p style={{ color: "#cfd2d4" }}>
-                          We identify and recruit the best-fit experts, not just from a database, but through active outreach when needed. Each candidate is vetted for qualifications, relevance, and credibility.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-12 col-md-12 mt-4 p-3">
-                    <div className="case-strategy-cards" style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
-                      <div style={{ width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px" }}>
-                        <img src="/assets/images/backgrounds/support-3-icon.png" alt="support-3-icon" width={"80"} height={"80"} />
-                      </div>
-                      <div>
-                        <h5 style={{ fontWeight: "600", marginBottom: "10px", color: "#fff" }}>Introductions & Coordination</h5>
-                        <p style={{ color: "#cfd2d4" }}>
-                          You’re introduced to qualified experts and can hold preliminary calls to assess fit. We manage all scheduling, document sharing, and communication along the way.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-12 col-md-12 mt-4 p-3">
-                    <div className="case-strategy-cards" style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center" }}>
-                      <div style={{ width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center", borderRadius: "8px" }}>
-                        <img src="/assets/images/backgrounds/support-4-icon.png" alt="support-4-icon" width={"80"} height={"80"} />
-                      </div>
-                      <div>
-                        <h5 style={{ fontWeight: "600", marginBottom: "10px", color: "#fff" }}>Ongoing Support Through Case Close</h5>
-                        <p style={{ color: "#cfd2d4" }}>
-                          We stay involved through report writing, deposition, and trial. Whether it’s follow-up documentation or expert availability, we ensure nothing falls through the cracks.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-5 d-none d-md-block" style={{ backgroundImage: "url('/assets/images/backgrounds/bg-support.png')", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "left", }}>
-
-              </div>
-            </div>
-          </div>
-        </section>
-
-
+        {/* team section */}
         <Banner6Team />
 
         <section className="contact-one">
@@ -529,11 +304,11 @@ export default function Home() {
                         </div> */}
                         <div className="contact-one__info__content">
                           <p className="contact-one__info__text" style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center", gap: 0 }}>
-                            <a href="mailto:info@homesteadexperts.com" className='fs-15 text-white'>
+                            <a href="mailto:info@homesteadexperts.com" className='text-white'>
                               info@homesteadexperts.com
                             </a>
                             {/* <br /> */}
-                            <a href="https://homesteadexperts.com/" className='fs-15 text-white'>https://homesteadexperts.com/</a>
+                            <a href="https://homesteadexperts.com/" className='text-white'>https://homesteadexperts.com/</a>
                           </p>
                         </div>
                       </li>
@@ -594,10 +369,10 @@ export default function Home() {
                       </div>
 
                       <div className="form-one__control form-one__control--full">
-                        <button type="submit" className="procounsel-btn">
+                        <a href="#" className="procounsel-btn">
                           <i>Case Details</i>
                           <span>Case Details</span>
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </form>
@@ -606,231 +381,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* <section className="blog-one">
-          <div className="container">
-            <div className="sec-title text-center">
-              <div className="sec-title__tagline bw-split-in-up-fast d-inline-flex align-items-center gap-2">
-                <HammerIcon />Article
-              </div>
-
-              <h3 className="sec-title__title bw-split-in-up">
-                Latest News & Articles From <br />
-                <span>The Blog Posts</span>
-              </h3>
-            </div>
-
-            <div
-              className="blog-one__carousel procounsel-owl__carousel procounsel-owl__carousel--with-shadow procounsel-owl__carousel--basic-nav owl-carousel owl-theme"
-              data-owl-options='{
-				"items": 1,
-				"margin": 30,
-				"loop": false,
-				"smartSpeed": 700,
-				"nav": false,
-				"navText": ["<span className=\"fa fa-angle-left\"></span>","<span className=\"fa fa-angle-right\"></span>"],
-				"dots": true,
-				"autoplay": false,
-				"responsive": {
-					"0": {
-						"items": 1
-					},
-					"768": {
-						"items": 2
-					},
-					"1200": {
-						"items": 2
-					},
-					"1600": {
-						"items": 3
-					}
-				}
-			}'>
-              <div className="item">
-                <div className="blog-card wow fadeInUp" data-wow-duration="1500ms" data-wow-delay="00ms">
-                  <div className="blog-card__content">
-                    <div className="blog-card__user">
-                      <img
-                        src="/assets/images/blog/blog-user-1.jpg"
-                        alt="10 Simple Practices that Will Help You Get 1% "
-                        className="blog-card__user__img"
-                      />
-                      <div className="blog-card__user__info">
-                        <h3 className="blog-card__user__name">
-                          Ronald Richards
-                        </h3>
-                        <p className="blog-card__user__designation">Admin</p>
-                      </div>
-                    </div>
-                    <h3 className="blog-card__title">
-                      <a href="blog-details-right.html">
-                        10 Simple Practices that Will Help You Get 1%{" "}
-                      </a>
-                    </h3> 
-                  </div> 
-
-                  <div className="blog-card__image">
-                    <div className="blog-card__image__inner">
-                      <img
-                        src="/assets/images/blog/blog-1-1.jpg"
-                        alt="10 Simple Practices that Will Help You Get 1% "
-                      />
-                      <img
-                        src="/assets/images/blog/blog-1-1.jpg"
-                        alt="10 Simple Practices that Will Help You Get 1% "
-                      />
-                      <a
-                        href="blog-details-right.html"
-                        className="blog-card__image__link"
-                      >
-                        <span className="sr-only">
-                          10 Simple Practices that Will Help You Get 1%{" "}
-                        </span>
-                      </a>
-                    </div>
-                    <div className="blog-card__date">
-                      <span>03</span>Feb
-                    </div> 
-                  </div> 
-
-                  <ul className="list-unstyled blog-card__meta">
-                    <li>
-                      <a href="blog-list-right.html">Read More</a>
-                    </li>
-                    <li>
-                      <i className="icon-bubble-chat-1"></i>2 Comments
-                    </li>
-                  </ul> 
-                </div> 
-              </div> 
-
-              <div className="item">
-                <div
-                  className="blog-card wow fadeInUp"
-                  data-wow-duration="1500ms"
-                  data-wow-delay="100ms"
-                >
-                  <div className="blog-card__content">
-                    <div className="blog-card__user">
-                      <img
-                        src="/assets/images/blog/blog-user-2.jpg"
-                        alt="We Can Aenean Poor leo Nec This Blog."
-                        className="blog-card__user__img"
-                      />
-                      <div className="blog-card__user__info">
-                        <h3 className="blog-card__user__name">
-                          Ronald Richards
-                        </h3>
-                        <p className="blog-card__user__designation">Admin</p>
-                      </div>
-                    </div>
-                    <h3 className="blog-card__title">
-                      <a href="blog-details-right.html">
-                        We Can Aenean Poor leo Nec This Blog.
-                      </a>
-                    </h3> 
-                  </div> 
-
-                  <div className="blog-card__image">
-                    <div className="blog-card__image__inner">
-                      <img
-                        src="/assets/images/blog/blog-1-2.jpg"
-                        alt="We Can Aenean Poor leo Nec This Blog."
-                      />
-                      <img
-                        src="/assets/images/blog/blog-1-2.jpg"
-                        alt="We Can Aenean Poor leo Nec This Blog."
-                      />
-                      <a
-                        href="blog-details-right.html"
-                        className="blog-card__image__link"
-                      >
-                        <span className="sr-only">
-                          We Can Aenean Poor leo Nec This Blog.
-                        </span>
-                      </a>
-                    </div>
-                    <div className="blog-card__date">
-                      <span>03</span>Feb
-                    </div>
-                  </div>
-
-                  <ul className="list-unstyled blog-card__meta">
-                    <li>
-                      <a href="blog-list-right.html">Read More</a>
-                    </li>
-                    <li>
-                      <i className="icon-bubble-chat-1"></i>2 Comments
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
-              <div className="item">
-                <div
-                  className="blog-card wow fadeInUp"
-                  data-wow-duration="1500ms"
-                  data-wow-delay="200ms"
-                >
-                  <div className="blog-card__content">
-                    <div className="blog-card__user">
-                      <img
-                        src="/assets/images/blog/blog-user-3.jpg"
-                        alt="Aenean Sollicitudin Ieo Nunc, Ornare This Blog."
-                        className="blog-card__user__img"
-                      />
-                      <div className="blog-card__user__info">
-                        <h3 className="blog-card__user__name">
-                          Ronald Richards
-                        </h3>
-                        <p className="blog-card__user__designation">Admin</p>
-                      </div>
-                    </div>
-                    <h3 className="blog-card__title">
-                      <a href="blog-details-right.html">
-                        Aenean Sollicitudin Ieo Nunc, Ornare This Blog.
-                      </a>
-                    </h3>
-                  </div>
-
-                  <div className="blog-card__image">
-                    <div className="blog-card__image__inner">
-                      <img
-                        src="/assets/images/blog/blog-1-3.jpg"
-                        alt="Aenean Sollicitudin Ieo Nunc, Ornare This Blog."
-                      />
-                      <img
-                        src="/assets/images/blog/blog-1-3.jpg"
-                        alt="Aenean Sollicitudin Ieo Nunc, Ornare This Blog."
-                      />
-                      <a
-                        href="blog-details-right.html"
-                        className="blog-card__image__link"
-                      >
-                        <span className="sr-only">
-                          Aenean Sollicitudin Ieo Nunc, Ornare This Blog.
-                        </span>
-                      </a>
-                    </div>
-                    <div className="blog-card__date">
-                      <span>03</span>Feb
-                    </div>
-                  </div>
-
-                  <ul className="list-unstyled blog-card__meta">
-                    <li>
-                      <a href="blog-list-right.html">Read More</a>
-                    </li>
-                    <li>
-                      <i className="icon-bubble-chat-1"></i>2 Comments
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
         <footer className="main-footer">
           <div
             className="main-footer__bg"
@@ -1014,8 +564,6 @@ export default function Home() {
 
 
 
-      {/* <!-- /.mobile-nav__wrapper --> */}
-
       <div className="search-popup">
         <div className="search-popup__overlay search-toggler"></div>
         <div className="search-popup__content">
@@ -1041,10 +589,7 @@ export default function Home() {
           </form>
         </div>
 
-        {/* <!-- /.search-popup__content --> */}
       </div>
-
-      {/* <!-- /.search-popup --> */}
 
       <a href="#" data-target="html" className="scroll-to-target scroll-to-top">
         <span className="scroll-to-top__text">back top</span>
@@ -1052,121 +597,37 @@ export default function Home() {
           <span className="scroll-to-top__inner"></span>
         </span>
       </a>
-
-      <Script
-        src="/assets/vendors/jquery/jquery-3.7.1.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/bootstrap-select/bootstrap-select.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jarallax/jarallax.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-ui/jquery-ui.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-appear/jquery.appear.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-validate/jquery.validate.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/nouislider/nouislider.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/tiny-slider/tiny-slider.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/wnumb/wNumb.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/owl-carousel/js/owl.carousel.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/wow/wow.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/imagesloaded/imagesloaded.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/isotope/isotope.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/slick/slick.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/tilt/tilt.jquery.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/countdown/countdown.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-circleType/jquery.circleType.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-lettering/jquery.lettering.min.js"
-        strategy="afterInteractive"
-      ></Script>
+      <Script src="/assets/vendors/jquery/jquery-3.7.1.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/bootstrap-select/bootstrap-select.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jarallax/jarallax.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-ui/jquery-ui.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-appear/jquery.appear.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-validate/jquery.validate.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/nouislider/nouislider.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/tiny-slider/tiny-slider.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/wnumb/wNumb.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/owl-carousel/js/owl.carousel.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/wow/wow.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/imagesloaded/imagesloaded.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/isotope/isotope.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/slick/slick.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/tilt/tilt.jquery.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/countdown/countdown.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-circleType/jquery.circleType.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-lettering/jquery.lettering.min.js" strategy="afterInteractive"></Script>
 
       {/* <!-- gsap js --> */}
-
-      <Script
-        src="/assets/vendors/gsap/gsap.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/gsap/scrolltrigger.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/gsap/splittext.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/gsap/procounsel-split.js"
-        strategy="afterInteractive"
-      ></Script>
+      <Script src="/assets/vendors/gsap/gsap.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/gsap/scrolltrigger.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/gsap/splittext.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/gsap/procounsel-split.js" strategy="afterInteractive"></Script>
 
       {/* <!-- template js --> */}
-
-      <Script
-        src="/assets/js/procounsel.js"
-        strategy="afterInteractive"
-      ></Script>
+      <Script src="/assets/js/procounsel.js" strategy="afterInteractive"></Script>
     </>
   );
 }

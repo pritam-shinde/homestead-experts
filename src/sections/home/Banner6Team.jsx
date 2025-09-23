@@ -76,7 +76,7 @@ const Banner6Team = () => {
                 <div className="team-card__image bw-img-anim-left">
                   <div className="team-card__content">
                     <h3 className="team-card__title">
-                      <a href="team-details.html">{member.name}</a>
+                      <a href="#">{member.name}</a>
                     </h3>
                     <p className="team-card__designation">{member.designation}</p>
                   </div>
