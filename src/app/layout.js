@@ -1,7 +1,8 @@
 import { Inter, Marcellus, Open_Sans, Plus_Jakarta_Sans } from "next/font/google";
 // import "../../public/assets/css/procounsel.css";
-import "./globals.css";
+import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
+import "./globals.css";
 
 // Configure fonts
 const inter = Inter({
@@ -39,23 +40,13 @@ export default function RootLayout({ children }) {
           Homestead Experts - Medical Expert Witness Services
         </title>
         {/* <!-- favicons Icons --> */}
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="assets/images/favicons/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="assets/images/favicons/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="assets/images/favicons/favicon-16x16.png"
-        />
+        <link rel="icon" sizes="180x180" href="assets/images/favicons/favicon_180x180.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon_180x180.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon_180x180.png" />
+
+          {/* <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" /> */}
+
         <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
         <meta
           name="description"
@@ -124,7 +115,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
-        {/* <Footer/> */}
+        <Footer />
       </body>
     </html>
   );

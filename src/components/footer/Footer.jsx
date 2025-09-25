@@ -1,213 +1,179 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
 
 const Footer = () => {
+    const footerLinks = [
+        {
+            title: "Links",
+            delay: "100ms",
+            links: [
+                { label: "About Us", href: "#" },
+                { label: "Meet the Lawyer", href: "#" },
+                { label: "Expert Witness", href: "#" },
+                { label: "Contact", href: "#" },
+            ],
+        },
+        {
+            title: "Explore",
+            delay: "200ms",
+            links: [
+                { label: "What We Offer", href: "#" },
+                { label: "Our Story", href: "#" },
+                { label: "Latest News", href: "#" },
+                { label: "Help Center", href: "#" },
+            ],
+        },
+    ];
+
+    const contactInfo = [
+        {
+            icon: "icon-telephone-call-1",
+            content: (
+                <a
+                    href="tel:+18772443703"
+                    aria-label="Call us at (877) 244-3703"
+                >
+                    (877) 244-3703
+                </a>
+            ),
+        },
+        {
+            icon: "icon-mail",
+            content: (
+                <a href="mailto:info@homesteadexperts.com">
+                    info@homesteadexperts.com
+                </a>
+            ),
+        },
+    ];
+
+    const socialLinks = [
+        { href: "https://facebook.com", icon: "icon-facebook", label: "Facebook" },
+        { href: "https://pinterest.com", icon: "icon-pinterest", label: "Pinterest" },
+        { href: "https://twitter.com", icon: "icon-twitter", label: "Twitter" },
+        { href: "https://youtube.com", icon: "icon-youtube", label: "Youtube" },
+    ];
+
     return (
-        <>
-            <footer className="main-footer">
-                <div
-                    className="main-footer__bg"
-                    style={{ backgroundImage: "url('/assets/images/backgrounds/footer-bg.png')" }}></div>
-                <div className="main-footer__top">
-                    <div className="container">
-                        <div className="row">
-                            <div
-                                className="col-md-6 col-xl-4 wow fadeInUp"
-                                data-wow-delay="00ms"
-                            >
-                                <div className="footer-widget footer-widget--about">
-                                    <a href="#" className="footer-widget__logo">
-                                        <Image
-                                            src="/assets/images/logos/homestead-experts-logo-light.png"
-                                            width={250}
-                                            height={40}
-                                            alt="Homestead Logo"
-                                        />
-                                    </a>
-                                    <p className="footer-widget__text">
-                                        Discover a unique approach with our dedicated attorneys,
-                                        committed effective legal solutions.
-                                    </p>
-                                </div>
-                                {/* <!-- /.footer-widget --> */}
+        <footer className="main-footer">
+            <div className="main-footer__bg" style={{ backgroundImage: "url('/assets/images/backgrounds/footer-bg.png')" }}></div>
+            <div className="main-footer__top">
+                <div className="container">
+                    <div className="row">
+                        {/* Logo + About */}
+                        <div className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="00ms">
+                            <div className="footer-widget footer-widget--about">
+                                <a href="#" className="footer-widget__logo">
+                                    <Image src="/assets/images/logos/homestead-experts-logo-light.png" width={250} height={40}
+                                        alt="Homestead Logo" />
+                                </a>
+                                <p className="footer-widget__text">
+                                    Discover a unique approach with our dedicated attorneys,
+                                    committed effective legal solutions.
+                                </p>
                             </div>
-                            {/* <!-- /.col-md-6 --> */}
-                            <div
-                                className="col-md-6 col-xl-2 wow fadeInUp"
-                                data-wow-delay="100ms"
-                            >
-                                <div className="footer-widget footer-widget--links">
-                                    <h2 className="footer-widget__title">Links</h2>
-                                    {/* <!-- /.footer-widget__title --> */}
-                                    <ul className="list-unstyled footer-widget__links">
-                                        <li>
-                                            <a href="#">About Us</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Meet the Lawyer</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Expert Witness</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            {/* <!-- /.col-md-6 --> */}
-                            <div className="col-md-6 col-xl-2 wow fadeInUp" data-wow-delay="200ms">
-                                <div className="footer-widget footer-widget--links">
-                                    <h2 className="footer-widget__title">Explore</h2>
-                                    <ul className="list-unstyled footer-widget__links">
-                                        <li>
-                                            <a href="#">What We Offer</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Our Story</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Latest News</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Help Center</a>
-                                        </li>
-                                    </ul>
-                                    {/* <!-- /.list-unstyled footer-widget__links --> */}
-                                </div>
-                                {/* <!-- /.footer-widget --> */}
-                            </div>
-                            {/* <!-- /.col-md-6 --> */}
-                            <div
-                                className="col-md-6 col-xl-4 wow fadeInUp"
-                                data-wow-delay="300ms"
-                            >
-                                <div className="footer-widget footer-widget--mail">
-                                    <h2 className="footer-widget__title">
-                                        Signup for our latest news
-                                        <br /> & articles
-                                    </h2>
-                                    {/* <!-- /.footer-widget__title --> */}
-                                    <form
-                                        action="#"
-                                        data-url="MAILCHIMP_FORM_URL"
-                                        className="footer-widget__newsletter mc-form"
-                                    >
-                                        <input
-                                            type="text"
-                                            name="EMAIL"
-                                            placeholder="Email Address"
-                                        />
-                                        <button type="submit">
-                                            <i className="icon-right-arrow-2"></i>
-                                            <span className="sr-only">submit</span>
-                                            {/* <!-- /.sr-only --> */}
-                                        </button>
-                                    </form>
-                                    {/* <!-- /. mc-form --> */}
-                                    <div className="footer-widget__check">
-                                        <input
-                                            type="checkbox"
-                                            name="save-data"
-                                            id="save-data"
-                                        />
-                                        <label htmlFor="save-data">
-                                            I agree to the{" "}
-                                            <a href="#">Privacy Policy.</a>
-                                        </label>
-                                    </div>
-                                    <div className="mc-form__response"></div>
-                                    {/* <!-- /.mc-form__response --> */}
-                                    {/* <!-- /.footer-widget__text --> */}
-                                </div>
-                                {/* <!-- /.footer-widget --> */}
-                            </div>
-                            {/* <!-- /.col-md-6 --> */}
                         </div>
-                        {/* <!-- /.row --> */}
-                        <div className="main-footer__info">
-                            <div className="row">
-                                <div className="col-lg-8">
-                                    <div className="main-footer__info__inner">
-                                        <div className="main-footer__info__pin">
-                                            <i className="icon-pin"></i>
-                                        </div>
-                                        <div className="main-footer__info__location">
+
+                        {/* Dynamic Link Sections */}
+                        {footerLinks.map((section, index) => (
+                            <div key={index} className="col-md-6 col-xl-2 wow fadeInUp" data-wow-delay={section.delay}>
+                                <div className="footer-widget footer-widget--links">
+                                    <h2 className="footer-widget__title">{section.title}</h2>
+                                    <ul className="list-unstyled footer-widget__links">
+                                        {section.links.map((link, idx) => (
+                                            <li key={idx}>
+                                                <a className="text-white" href={link.href}>{link.label}</a>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        ))}
+
+                        {/* Newsletter */}
+                        <div className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="300ms">
+                            <div className="footer-widget footer-widget--mail">
+                                <h2 className="footer-widget__title">
+                                    Signup for our latest news
+                                    <br /> & articles
+                                </h2>
+                                <form action="#" data-url="MAILCHIMP_FORM_URL" className="footer-widget__newsletter mc-form">
+                                    <input type="text" name="EMAIL" placeholder="Email Address" />
+                                    <button type="submit">
+                                        <i className="icon-right-arrow-2"></i>
+                                        <span className="sr-only">submit</span>
+                                    </button>
+                                </form>
+                                <div className="footer-widget__check">
+                                    <input type="checkbox" name="save-data" id="save-data" />
+                                    <label htmlFor="save-data">
+                                        I agree to the <a href="#">Privacy Policy.</a>
+                                    </label>
+                                </div>
+                                <div className="mc-form__response"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Contact + Social */}
+                    <div className="main-footer__info">
+                        <div className="row">
+                            <div className="col-lg-8">
+                                <div className="main-footer__info__inner">
+                                    <div className="main-footer__info__pin">
+                                        <i className="icon-pin"></i>
+                                    </div>
+                                    <div className="main-footer__info__location text-white">
+                                        <a href="https://maps.app.goo.gl/awwKM26kMFcT6YcRA"
+                                            target="_blank" rel="noopener noreferrer" className="text-white">
                                             259 Nassau St. Suite 2 #552 <br />
                                             Princeton, NJ 08542
-                                        </div>
-                                        <ul className="list-unstyled main-footer__info__list">
-                                            <li className="main-footer__info__item">
+                                        </a>
+                                    </div>
+                                    <ul className="list-unstyled main-footer__info__list">
+                                        {contactInfo.map((item, idx) => (
+                                            <li key={idx} className="main-footer__info__item">
                                                 <div className="main-footer__info__icon">
-                                                    <i className="icon-telephone-call-1"></i>
+                                                    <i className={item.icon}></i>
                                                 </div>
                                                 <div className="main-footer__info__content">
-                                                    <p className="main-footer__info__text">
-                                                        <a href="tel:+18772443703" aria-label="Call us at (877) 244-3703">(877) 244-3703</a>
-                                                    </p> 
-                                                </div>
-                                            </li>
-                                            <li className="main-footer__info__item">
-                                                <div className="main-footer__info__icon">
-                                                    <i className="icon-mail"></i>
-                                                </div>
-                                                <div className="main-footer__info__content">
-                                                    <p className="main-footer__info__text">
-                                                        <a href="mailto:info@homesteadexperts.com">
-                                                            info@homesteadexperts.com
-                                                        </a>
+                                                    <p className="main-footer__info__text text-white">
+                                                        {item.content}
                                                     </p>
-                                                    {/* <!-- /.contact-one__info__text --> */}
                                                 </div>
                                             </li>
-                                        </ul>
-                                    </div>
+                                        ))}
+                                    </ul>
                                 </div>
-                                <div className="col-lg-4">
-                                    <div className="main-footer__info__social">
-                                        <a href="https://facebook.com">
-                                            <i className="icon-facebook"></i>
-                                            <span className="sr-only">Facebook</span>
+                            </div>
+
+                            <div className="col-lg-4">
+                                <div className="main-footer__info__social">
+                                    {socialLinks.map((social, idx) => (
+                                        <a key={idx} href={social.href}>
+                                            <i className={social.icon}></i>
+                                            <span className="sr-only">{social.label}</span>
                                         </a>
-                                        <a href="https://pinterest.com">
-                                            <i className="icon-pinterest"></i>
-                                            <span className="sr-only">Pinterest</span>
-                                        </a>
-                                        <a href="https://twitter.com">
-                                            <i className="icon-twitter"></i>
-                                            <span className="sr-only">Twitter</span>
-                                        </a>
-                                        <a href="https://youtube.com">
-                                            <i className="icon-youtube"></i>
-                                            <span className="sr-only">Youtube</span>
-                                        </a>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>
                     </div>
-                    {/* <!-- /.container --> */}
                 </div>
-                {/* <!-- /.main-footer__top --> */}
-                <div
-                    className="main-footer__bottom  wow fadeInUp"
-                    data-wow-delay="00ms"
-                >
-                    <div className="container">
-                        <div className="main-footer__bottom__inner">
-                            <p className="main-footer__copyright">
-                                &copy; Copyright <span className="dynamic-year"></span> by
-                                Homestead Experts.
-                            </p>
-                        </div>
-                        {/* <!-- /.main-footer__inner --> */}
-                    </div>
-                    {/* <!-- /.container --> */}
-                </div>
-                {/* <!-- /.main-footer__bottom --> */}
-            </footer>
-        </>
-    )
-}
+            </div>
 
-export default Footer
+            {/* Footer Bottom */}
+            <div className="main-footer__bottom wow fadeInUp" data-wow-delay="00ms">
+                <div className="container">
+                    <div className="main-footer__bottom__inner">
+                        <p className="main-footer__copyright text-white">
+                            &copy; Copyright <span className="dynamic-year"></span> by
+                            Homestead Experts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;

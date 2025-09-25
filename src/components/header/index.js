@@ -81,7 +81,9 @@ export const menuData = [
   },
   {
     label: "About",
-    href: "#", children: [
+    href: "/about/",
+     children: [
+      { label: "Our Team", href: "/our-team/" },
       { label: "Pricing", href: "#" },
       { label: "Become an Expert", href: "#" },
       { label: "About Homestead", href: "#" },
@@ -90,7 +92,7 @@ export const menuData = [
   },
   {
     label: "Contact",
-    href: "#",
+    href: "/contact/",
   },
 ];
 
