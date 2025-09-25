@@ -4,6 +4,7 @@ import Testimonials from "@/sections/about/Testimonials";
 import HammerIcon from "@/sections/icons/HammerIcon";
 import { useEffect } from "react";
 
+
 const About = () => {
     useEffect(() => {
         const scriptUrls = [
@@ -40,6 +41,7 @@ const About = () => {
             }
         })();
     }, []);
+
     return (
         <>
             <div className="page-wrapper">
@@ -306,32 +308,32 @@ const About = () => {
                         }'>
                                             <div className="item">
                                                 <div className="barnds-one__img">
-                                                    <img src="assets/images/resources/brand-1.png" alt="" />
+                                                    <img src="assets/images/resources/brand-1-new.png" alt="" />
                                                 </div>
                                             </div>
                                             <div className="item">
                                                 <div className="barnds-one__img">
-                                                    <img src="assets/images/resources/brand-2.png" alt="" />
+                                                    <img src="assets/images/resources/brand-2-new.png" alt="" />
                                                 </div>
                                             </div>
                                             <div className="item">
                                                 <div className="barnds-one__img">
-                                                    <img src="assets/images/resources/brand-3.png" alt="" />
+                                                    <img src="assets/images/resources/brand-3-new.png" alt="" />
                                                 </div>
                                             </div>
                                             <div className="item">
                                                 <div className="barnds-one__img">
-                                                    <img src="assets/images/resources/brand-1.png" alt="" />
+                                                    <img src="assets/images/resources/brand-1-new.png" alt="" />
                                                 </div>
                                             </div>
                                             <div className="item">
                                                 <div className="barnds-one__img">
-                                                    <img src="assets/images/resources/brand-5.png" alt="" />
+                                                    <img src="assets/images/resources/brand-5-new.png" alt="" />
                                                 </div>
                                             </div>
                                             <div className="item">
                                                 <div className="barnds-one__img">
-                                                    <img src="assets/images/resources/brand-6.png" alt="" />
+                                                    <img src="assets/images/resources/brand-6-new.png" alt="" />
                                                 </div>
                                             </div>
                                         </div>
