@@ -1,6 +1,5 @@
 "use client";
 
-import Testimonials from "@/sections/about/Testimonials";
 import Banner6Team from "@/sections/home/Banner6Team";
 import HammerIcon from "@/sections/icons/HammerIcon";
 import { useEffect } from "react";
@@ -251,7 +250,7 @@ const About = () => {
                     </div>
                 </section>
                 <Banner6Team />
-                <Testimonials />
+                {/* <Testimonials /> */}
 
                 <section className="cta-three">
                     <div className="container wow fadeInUp" data-wow-delay="200ms">
