@@ -36,16 +36,9 @@ const OurTeam = () => {
       designation: "Sr. Expert Witness Recruiter",
       img: "/assets/images/team/team-1-5.jpeg",
       delay: "100ms",
-    },
+    }, 
     {
       id: 6,
-      name: "Stephanie Baute",
-      designation: "Expert Witness Recruiter",
-      img: "/assets/images/team/team-1-6.jpg",
-      delay: "200ms",
-    },
-    {
-      id: 7,
       name: 'William "Topper" Cramer',
       designation: "Legal Nurse Consultant",
       img: "/assets/images/team/team-1-7.jpg",
@@ -75,7 +68,7 @@ const OurTeam = () => {
           <h2 className="page-header__title bw-split-in-right">Our Team</h2>
           <ul className="procounsel-breadcrumb list-unstyled">
             <li>
-              <a href="index.html">Home</a>
+              <a href="/">Home</a>
             </li>
             <li>
               <span>Team</span>
@@ -112,7 +105,7 @@ const OurTeam = () => {
                   >
                     <div className="team-card__content">
                       <h3 className="team-card__title">
-                        <a href="team-details.html">{member.name}</a>
+                        <a href="#">{member.name}</a>
                       </h3>
                       <p className="team-card__designation">
                         {member.designation}
@@ -250,7 +243,7 @@ export default OurTeam;
 //                   <div className="team-card__image bw-img-anim-left">
 //                     <div className="team-card__content">
 //                       <h3 className="team-card__title">
-//                         <a href="team-details.html">{member.name}</a>
+//                         <a href="#">{member.name}</a>
 //                       </h3>
 //                       <p className="team-card__designation">{member.designation}</p>
 //                     </div>
