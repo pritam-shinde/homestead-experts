@@ -220,7 +220,7 @@ export default function Home() {
         <Banner4CaseStrategy />
 
         {/* team section */}
-        <Banner6Team />
+        {/* <Banner6Team /> */}
 
         <Banner8Contact />
       </div>

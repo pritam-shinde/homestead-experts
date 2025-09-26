@@ -1,6 +1,5 @@
 "use client";
 
-import Banner6Team from "@/sections/home/Banner6Team";
 import HammerIcon from "@/sections/icons/HammerIcon";
 import { useEffect } from "react";
 
@@ -249,7 +248,7 @@ const About = () => {
                         </div>
                     </div>
                 </section>
-                <Banner6Team />
+                {/* <Banner6Team /> */}
                 {/* <Testimonials /> */}
 
                 <section className="cta-three">
