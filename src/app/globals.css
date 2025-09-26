@@ -105,3 +105,8 @@ a {
   transition: transform 500ms ease, top 500ms ease;
   transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
 }
+
+.small-plus {
+    font-size: 0.6em;   /* make + smaller */
+    vertical-align: super; /* align like a superscript */
+  }

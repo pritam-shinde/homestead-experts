@@ -2,6 +2,42 @@
 import { useEffect } from "react";
 import HammerIcon from "../icons/HammerIcon";
 
+// const testimonials = [
+//   {
+//     id: 1,
+//     img: "assets/images/resources/testi-3-1.jpg",
+//     name: "Haley S",
+//     designation: "Customer",
+//     text: "Highly recommend for your expert needs!",
+//     delay: "000ms",
+//   },
+//   {
+//     id: 2,
+//     img: "assets/images/resources/testi-3-2.jpg",
+//     name: "Michael Karikomi",
+//     designation: "Founder",
+//     text: "I have worked with Homestead Medical Experts on several cases, and they are the best in the business. Very prompt and professional communication and they excel at finding great experts. Very highly recommended!",
+//     delay: "100ms",
+//   },
+//   {
+//     id: 3,
+//     img: "assets/images/resources/testi-3-3.jpg",
+//     name: "D C",
+//     designation: "Customer",
+//     text: "Homestead and its professionals do an outstanding job. They work hard to identify and screen experts and then coordinate and follow through on every aspect of the expert's work. As a practicing trial lawyer with 25 years' experience in personal injury litigation, I can say without reservation this is the best experience I have ever had with the process from finding and retaining, to workup, to disclosure, and beyond.",
+//     delay: "200ms",
+//   },
+//   {
+//     id: 4,
+//     img: "assets/images/resources/testi-3-4.jpg",
+//     name: "Hena Wiano",
+//     designation: "Co Founder",
+//     text: "There are many variations of passages of Lorem Ipsum avalab but the majority have suffered alteration in some form, by injected humour, or randomised",
+//     delay: "300ms",
+//   },
+// ];
+
+
 const testimonials = [
   {
     id: 1,

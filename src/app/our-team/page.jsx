@@ -138,7 +138,7 @@ const OurTeam = () => {
                       alt={member.name}
                       style={{
                         width: "100%",
-                        height: "525px", // fixed height for all images
+                        height: "425px", // fixed height for all images
                         objectFit: "cover", // crops to fit nicely
                       }}
                     />

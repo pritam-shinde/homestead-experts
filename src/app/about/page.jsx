@@ -1,6 +1,7 @@
 "use client";
 
 import Testimonials from "@/sections/about/Testimonials";
+import Banner6Team from "@/sections/home/Banner6Team";
 import HammerIcon from "@/sections/icons/HammerIcon";
 import { useEffect } from "react";
 
@@ -46,7 +47,7 @@ const About = () => {
         <>
             <div className="page-wrapper">
                 <section className="page-header">
-                    <div className="page-header__bg" style={{ backgroundImage: "url('/assets/images/backgrounds/banner_about_us.jpg')",backgroundPosition:"center" }}></div>
+                    <div className="page-header__bg" style={{ backgroundImage: "url('/assets/images/backgrounds/banner_about_us.jpg')", backgroundPosition: "center" }}></div>
                     <div className="container">
                         <h2 className="page-header__title bw-split-in-right">About Us</h2>
                         <ul className="procounsel-breadcrumb list-unstyled">
@@ -85,7 +86,9 @@ const About = () => {
                                     </div>
 
                                     <p className="about-four__text text-white">
-                                        There are many variations of passages of one Lorem Ipsum avalab but the majority have suffered alteration in some form, by injed humour words randomised words which don't
+                                        At Homestead Experts, we take pride in being the leading expert witness referral source. Our network connects you with qualified professionals who can strengthen your case with credible, reliable, and court-tested expertise.
+                                    </p>
+                                    <p className="about-four__text text-white"> No money up-front, no subscriptions, and always a free consultation — we make the process simple, transparent, and client-focused.
                                     </p>
                                     <ul className="list-unstyled about-four__list">
                                         <li className="about-four__item text-white">
@@ -115,18 +118,18 @@ const About = () => {
                                     <div className="about-four__right__inner">
                                         <div className="about-four__count count-box">
                                             <h3 className="about-four__count__number">
-                                                <span className="count-text" data-stop="20" data-speed="1500">20</span>
+                                                <span className="count-text" data-stop="20" data-speed="1500">20<span className="small-plus">+</span></span>
                                             </h3>
                                             <p className="about-four__count__text text-white">Years Of Experience</p>
                                         </div>
                                         <div className="about-four__count count-box">
                                             <h3 className="about-four__count__number">
-                                                <span className="count-text" data-stop="15" data-speed="1500">15</span>
+                                                <span className="count-text" data-stop="15" data-speed="1500">5k<span className="small-plus">+</span></span>
                                             </h3>
 
-                                            <p className="about-four__count__text text-white">Online Consultation</p>
+                                            <p className="about-four__count__text text-white">Experts Sourced</p>
                                         </div>
-                                        <div className="about-four__count count-box">
+                                        {/* <div className="about-four__count count-box">
                                             <h3 className="about-four__count__number">
                                                 <span className="count-text" data-stop="38" data-speed="1500">38</span>
                                             </h3>
@@ -138,7 +141,7 @@ const About = () => {
                                                 <span className="count-text" data-stop="90" data-speed="1500">90</span>
                                             </h3>
                                             <p className="about-four__count__text text-white">Won best Awards</p>
-                                        </div>
+                                        </div> */}
                                     </div>
                                     {/* <a href="https://www.youtube.com/watch?v=h9MbznbxlLc" className="video-popup">
                                         <i className="icon-play-1"></i>
@@ -175,7 +178,9 @@ const About = () => {
                                     </div>
 
                                     <p className="why-choose-four__content__text text-white">
-                                        That a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum that a reader will be distracted by the readable
+                                        We help attorneys and insurance companies save time by finding the best expert medical experts or other expert witnesses that strengthen their case.
+                                    </p>
+                                    <p className="why-choose-four__content__text text-white"> At Homestead Medical Experts we are proud to provide an effective and convenient service to help attorneys communicate and work with our expert witnesses to provide the best outcomes in any form of litigation.
                                     </p>
                                     <div className="why-choose-four__list">
                                         <div className="why-choose-four__item">
@@ -184,10 +189,10 @@ const About = () => {
                                                     <i className="icon-podium"></i>
                                                 </div>
                                                 <h3 className="why-choose-four__item__title">
-                                                    99% Winning <br /> Guarantee
+                                                    High Success <br /> Rate
                                                 </h3>
                                             </div>
-                                            <p className="why-choose-four__item__text text-white">There are many variations of passages of Lorem</p>
+                                            <p className="why-choose-four__item__text text-white">Our history of favorable outcomes speaks for itself</p>
                                         </div>
                                         <div className="why-choose-four__item">
                                             <div className="why-choose-four__item__top">
@@ -198,7 +203,7 @@ const About = () => {
                                                     Full Time <br /> Support
                                                 </h3>
                                             </div>
-                                            <p className="why-choose-four__item__text text-white">There are many variations of passages of Lorem</p>
+                                            <p className="why-choose-four__item__text text-white">Our legal team is available when you need us most</p>
                                         </div>
                                     </div>
                                     <a href="#" className="procounsel-btn">
@@ -215,28 +220,28 @@ const About = () => {
                                     <div className="why-choose-four__right__wrapper">
                                         <div className="why-choose-four__box count-box">
                                             <h3 className="why-choose-four__box__count">
-                                                <span className="count-text" data-stop="35" data-speed="1500">35</span>
+                                                <span className="count-text" data-stop="35" data-speed="1500">5000+</span>
                                             </h3>
                                             <p className="why-choose-four__box__text">
-                                                Experience <br />
-                                                Attorneys
+                                                Medical <br />
+                                                Exams
                                             </p>
                                         </div>
                                         <div className="why-choose-four__box count-box">
                                             <h3 className="why-choose-four__box__count">
-                                                <span className="count-text" data-stop="20" data-speed="1500">20</span>
+                                                <span className="count-text" data-stop="20" data-speed="1500">4,750+</span>
                                             </h3>
                                             <p className="why-choose-four__box__text">
-                                                Years of <br /> Experience
+                                                Cases <br /> Completed
                                             </p>
                                         </div>
                                         <div className="why-choose-four__box count-box">
                                             <h3 className="why-choose-four__box__count">
-                                                <span className="count-text" data-stop="90" data-speed="1500">90</span>
+                                                <span className="count-text" data-stop="90" data-speed="1500">10,000+</span>
                                             </h3>
                                             <p className="why-choose-four__box__text">
-                                                Best Law <br />
-                                                Award
+                                                Vetted <br />
+                                                Experts
                                             </p>
                                         </div>
                                     </div>
@@ -245,6 +250,7 @@ const About = () => {
                         </div>
                     </div>
                 </section>
+                <Banner6Team />
                 <Testimonials />
 
                 <section className="cta-three">

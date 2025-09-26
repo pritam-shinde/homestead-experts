@@ -23,7 +23,7 @@ const teamMembers = [
     img: "/assets/images/team/team-1-3.jpg",
     delay: "200ms",
   },
-  
+
 ];
 
 const socialLinks = [
@@ -39,7 +39,7 @@ const Banner6Team = () => {
       <div className="container">
         <div className="sec-title text-center">
           <div className="sec-title__tagline bw-split-in-up-fast d-inline-flex align-items-center gap-2 text-white">
-           <HammerIcon/>
+            <HammerIcon />
             Our Expertise
           </div>
 
@@ -93,11 +93,18 @@ const Banner6Team = () => {
                       ))}
                     </div>
                   </div>
-                  <Image src={member.img} alt={member.name} width={310} height={390} style={{objectFit:"cover"}}/>
+                  <Image src={member.img} alt={member.name} width={310} height={390} style={{ objectFit: "cover" }} />
                 </div>
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-5" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+          <a href="/our-team/" className="procounsel-btn">
+            <i>View All</i>
+            <span>View All</span>
+          </a>
         </div>
       </div>
     </section>
