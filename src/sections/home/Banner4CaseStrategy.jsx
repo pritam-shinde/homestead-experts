@@ -3,14 +3,7 @@ import { strategySteps } from "@/constants/strategySteps";
 const Banner4CaseStrategy = () => {
   return (
     <>
-      <section
-        style={{
-          backgroundColor: "#0E222A",
-          color: "#fff",
-          padding: "60px 20px 60px 170px",
-        }}
-        className="case-strategy"
-      >
+      <section style={{ backgroundColor: "#0B1A22", color: "#fff", padding: "60px 20px 60px 170px", }} className="case-strategy">
         <div className="container-fluid case-strategy-container">
           <div className="row mb-5 p-0">
             <h2
@@ -21,7 +14,7 @@ const Banner4CaseStrategy = () => {
             </h2>
             {/* <h5 style={{ color: "#fff", fontWeight: "400", marginBottom: "20px" }} className="mt-2 p-0">
                             Compelling Subheadline Can Go Here
-                        </h5> */}
+            </h5> */}
 
             <div className="col-12 col-lg-7 p-0">
               <p style={{ color: "#cfd2d4", lineHeight: "1.7" }}>
@@ -42,13 +35,7 @@ const Banner4CaseStrategy = () => {
                   <div className="col-12 col-md-12 mt-4 pe-0" key={index}>
                     <div
                       className="case-strategy-cards"
-                      style={{
-                        display: "flex",
-                        gap: "30px",
-                        justifyContent: "center",
-                        alignItems: "center",
-                      }}
-                    >
+                      style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center", }}                    >
                       <div
                         style={{
                           width: "80px",

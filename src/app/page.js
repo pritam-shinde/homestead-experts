@@ -2,7 +2,7 @@
 
 import Banner1 from "@/sections/home/Banner1";
 import Banner4CaseStrategy from "@/sections/home/Banner4CaseStrategy";
-import Banner6Team from "@/sections/home/Banner6Team";
+import Banner5CaseStudy from "@/sections/home/Banner5CaseStudy";
 import Banner8Contact from "@/sections/home/Banner8Contact";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -157,7 +157,9 @@ export default function Home() {
           id="about"
           style={{
             background: "url(assets/images/backgrounds/section-2-1-bg.png)", backgroundRepeat: "no-repeat",
-            backgroundSize: "160% 90%", backgroundPosition: "right center", backgroundColor: "#050d22",
+            backgroundSize: "160% 90%", backgroundPosition: "right center",
+            backgroundColor: "#0B1A22",
+            // backgroundColor: "#050d22",
           }}
         >
           <div className="container">
@@ -231,8 +233,7 @@ export default function Home() {
               left: 0,
               height: "100%",
               width: "100%",
-              backgroundImage:
-                "url('/assets/images/backgrounds/section-3-bg.png')",
+              backgroundImage: "url('/assets/images/backgrounds/section-3-bg.png')",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               backgroundPosition: "center",
@@ -249,8 +250,7 @@ export default function Home() {
               top: "42%",
               transform: "translateY(-50%)",
               height: "12px",
-              backgroundImage:
-                "url('/assets/images/backgrounds/red-line-09.png')",
+              backgroundImage: "url('/assets/images/backgrounds/red-line-09.png')",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               width: "100%",
@@ -309,10 +309,10 @@ export default function Home() {
         <Banner4CaseStrategy />
 
         {/* case study */}
-        {/* <Banner5CaseStudy /> */}
+        <Banner5CaseStudy />
 
         {/* team section */}
-        <Banner6Team />
+        {/* <Banner6Team /> */}
 
         <Banner8Contact />
       </div>
