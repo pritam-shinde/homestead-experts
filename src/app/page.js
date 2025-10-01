@@ -77,72 +77,45 @@ export default function Home() {
         {/* <!-- main-slider-start --> */}
         <Banner1 />
 
-        <section
-          className="feature-one responsive-feature"
-          style={{
-            position: "absolute",
-            left: "50%",
-            transform: "translateX(-50%)",
+        <section className="feature-one">
+          <div className="container" style={{
             maxWidth: "1200px",
             width: "100%",
             zIndex: 10,
             backgroundColor: "#050d22",
             padding: "40px 40px 0",
-            borderRadius: "8px",
+            // borderRadius: "8px",
             boxShadow: "0 4px 12px rgba(0,0,0,0.9)",
-          }}
-        >
-          <div className="container p-0">
-            <div
-              className="feature-one__inner"
-              style={{ padding: "0px 0 40px" }}
-            >
+          }}>
+            <div className="feature-one__inner">
               <div className="row gutter-y-0">
-                <div
-                  className="col-lg-4 col-md-6 wow fadeInUp"
-                  data-wow-delay="00ms"
-                >
+                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                   <div className="feature-one__item ">
                     <div className="feature-one__item__icon text-white">
                       <i className="icon-calendar"></i>
                     </div>
                     <h3 className="feature-one__item__title">
-                      <Link href="#" className="text-white">
-                        {" "}
-                        Find Your <br /> Expert Witness{" "}
-                      </Link>
+                      <Link href="#" className="text-white"> Find Your <br /> Expert Witness </Link>
                     </h3>
                   </div>
                 </div>
-                <div
-                  className="col-lg-4 col-md-6 wow fadeInUp"
-                  data-wow-delay="00ms"
-                >
+                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                   <div className="feature-one__item feature-one__item--border-left justify-content-center">
                     <div className="feature-one__item__icon text-white">
                       <i className="icon-payment"></i>
                     </div>
                     <h3 className="feature-one__item__title">
-                      <Link href="#" className="text-white">
-                        {" "}
-                        Get a Free <br /> Case Assessment
-                      </Link>
+                      <Link href="#" className="text-white"> Get a Free <br /> Case Assessment</Link>
                     </h3>
                   </div>
                 </div>
-                <div
-                  className="col-lg-4 col-md-6 wow fadeInUp"
-                  data-wow-delay="00ms"
-                >
+                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
                   <div className="feature-one__item feature-one__item--border-left justify-content-end">
                     <div className="feature-one__item__icon text-white">
                       <i className="icon-advice"></i>
                     </div>
                     <h3 className="feature-one__item__title">
-                      <Link href="#" className="text-white">
-                        {" "}
-                        Join Our Expert <br /> Network
-                      </Link>
+                      <Link href="#" className="text-white"> Join Our Expert <br /> Network</Link>
                     </h3>
                   </div>
                 </div>
@@ -150,6 +123,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
 
         {/* <!-- Start about-one --> */}
         <section
@@ -288,7 +262,7 @@ export default function Home() {
               Custom Recruitment for Complex Matters
             </h4>
             <p
-              style={{ maxWidth: "600px", marginBottom: "20px" }}
+              style={{ maxWidth: "600px", marginBottom: "20px", fontWeight: 400 }}
               className=" text-start"
             >
               We don&apos;t pull from static databases. When your case calls for

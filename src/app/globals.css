@@ -151,6 +151,6 @@ a {
   }
 }
 
-.main-slider-one__carousel div:not(.owl-dots){
+/* .main-slider-one__carousel div:not(.owl-dots){
   height: 100vh;
-}
+} */

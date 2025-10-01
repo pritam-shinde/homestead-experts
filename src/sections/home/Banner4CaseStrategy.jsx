@@ -17,7 +17,7 @@ const Banner4CaseStrategy = () => {
             </h5> */}
 
             <div className="col-12 col-lg-7 p-0">
-              <p style={{ color: "#cfd2d4", lineHeight: "1.7" }}>
+              <p style={{ color: "#cfd2d4", lineHeight: "1.7", fontWeight:400 }}>
                 From expert selection to courtroom support, Homestead is built
                 to serve your firm at every stage. We don’t just match you with
                 a qualified expert, we manage the process with precision,
@@ -54,22 +54,10 @@ const Banner4CaseStrategy = () => {
                         />
                       </div>
                       <div>
-                        <h5
-                          style={{
-                            fontWeight: "600",
-                            fontSize: "clamp(18px,4vw,20px)",
-                            marginBottom: "10px",
-                            color: "#fff",
-                          }}
-                        >
+                        <h5 style={{ fontWeight: "600", fontSize: "clamp(18px,4vw,20px)", marginBottom: "10px", color: "#fff", }}>
                           {step.title}
                         </h5>
-                        <p
-                          style={{
-                            color: "#cfd2d4",
-                            fontSize: "clamp(15px,4vw,16px)",
-                          }}
-                        >
+                        <p style={{ color: "#cfd2d4", fontWeight: 400, fontSize: "clamp(15px,4vw,16px)" }}>
                           {step.text}
                         </p>
                       </div>
@@ -79,16 +67,9 @@ const Banner4CaseStrategy = () => {
               </div>
             </div>
 
-            <div
-              className="col-12 col-lg-5 d-none d-md-block"
-              style={{
-                backgroundImage:
-                  "url('/assets/images/backgrounds/bg-support.png')",
-                backgroundRepeat: "no-repeat",
-                backgroundSize: "cover",
-                backgroundPosition: "left",
-              }}
-            ></div>
+            <div className="col-12 col-lg-5 d-none d-md-block" style={{
+              backgroundImage: "url('/assets/images/backgrounds/bg-support.png')", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "left",
+            }}></div>
           </div>
         </div>
       </section>
