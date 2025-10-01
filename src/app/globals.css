@@ -30,6 +30,15 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: "Kinatika";
+  src: url("/fonts/Kinetika-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* good for performance */
+}
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -110,3 +119,38 @@ a {
     font-size: 0.6em;   /* make + smaller */
     vertical-align: super; /* align like a superscript */
   }
+
+  /* in your global CSS */
+.sticky-header--fixed {
+  transform: translateY(-100%);
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Desktop: absolute centered */
+/* Tablet and below: relative (normal flow) */
+@media (max-width: 991px) {
+  .responsive-feature {
+    position: relative !important;
+    border-radius: 0 !important;
+    left: auto;
+    transform: none;
+    margin: 0 auto; /* still centers within parent */
+  }
+  .feature-one{
+    box-shadow: none !important;    
+  }
+  .feature-one__inner{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.main-slider-one__carousel div:not(.owl-dots){
+  height: 100vh;
+}

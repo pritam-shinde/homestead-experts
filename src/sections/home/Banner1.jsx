@@ -2,7 +2,11 @@ import { sliderData } from "@/constants/sliderData";
 
 export default function Banner1() {
   return (
-    <section className="main-slider-one" id="home" style={{ minHeight: "100vh", height: "100%", position: "relative" }}    >
+    <section
+      className="main-slider-one"
+      id="home"
+      style={{ minHeight: "100vh", height: "100%", position: "relative" }}
+    >
       <div
         className="main-slider-one__carousel procounsel-owl__carousel owl-carousel"
         data-owl-options={`{
@@ -10,7 +14,7 @@ export default function Banner1() {
           "animateOut": "fadeOut",
           "animateIn": "fadeIn",
           "items": 1,
-          "autoplay": true,
+          "autoplay": false,
           "autoplayTimeout": 7000,
           "smartSpeed": 1000,
           "nav": false,
@@ -38,7 +42,7 @@ export default function Banner1() {
                       <p className="main-slider-one__text">{slide.text}</p>
 
                       <div className="main-slider-one__btn">
-                        <a href="#" className="procounsel-btn">
+                        <a href="#" className="procounsel-btn text-uppercase">
                           <i> Discover More</i>
                           <span> Discover More</span>
                         </a>
@@ -54,8 +58,6 @@ export default function Banner1() {
     </section>
   );
 }
-
-
 
 // "use client"
 // import React, { useEffect } from "react";

@@ -101,7 +101,7 @@ const Banner6Team = () => {
         </div>
 
         <div className="mt-5" style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-          <a href="/our-team/" className="procounsel-btn">
+          <a href="/our-team/" className="procounsel-btn text-uppercase">
             <i>View All</i>
             <span>View All</span>
           </a>

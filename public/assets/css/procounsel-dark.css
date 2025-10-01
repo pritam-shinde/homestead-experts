@@ -15,7 +15,7 @@
 .sticky-header--cloned,
 body,
 body.boxed-wrapper .page-wrapper {
-  background-color: #050d22;
+  /* background-color: #050d22; */
   /* background-color: var(--procounsel-black); */
 }
 
@@ -76,13 +76,13 @@ body.boxed-wrapper .page-wrapper {
 }
 
 .contact-one__overlay {
-  background: linear-gradient(90deg, #1b2748 33.55%, rgba(27, 39, 72, 0) 100%);
+  /* background: linear-gradient(90deg, #1b2748 33.55%, rgba(27, 39, 72, 0) 100%); */
 }
 
 .why-choose-one,
 .contact-one {
   /* background-color: var(--procounsel-black2); */
-  background-color: #1b2748;
+  background-color: #0e222a;
 }
 
 .why-choose-one__bg::after {

@@ -9,18 +9,25 @@ export const sliderData = [
     ),
     text: (
       <>
-        Homestead connects attorneys with leading expert witnesses across every discipline. <br />
+        Homestead connects attorneys with leading expert witnesses across every
+        discipline. <br />
         Rigorously vetted, court-tested, and ready when you are.
       </>
     ),
   },
   {
     bg: "assets/images/backgrounds/slider-1-2-new.jpg",
-    title: <>Speed When It Matters Most.</>,
+    title: (
+      <>
+        Speed When <br /> It Matters Most.
+      </>
+    ),
     text: (
       <>
-        Your case can’t wait — neither should your search for the right expert. <br />
-        We deliver tailored matches quickly, without sacrificing rigor or credibility.
+        Your case can’t wait — neither should your search for the right expert.{" "}
+        <br />
+        We deliver tailored matches quickly, without sacrificing rigor or
+        credibility.
       </>
     ),
   },
@@ -33,7 +40,8 @@ export const sliderData = [
     ),
     text: (
       <>
-        Our network of experts spans every field and jurisdiction. From medicine and engineering to finance and construction <br />
+        Our network of experts spans every field and jurisdiction. From medicine
+        and engineering to finance and construction <br />
         Wherever your case takes you, we connect you with the right expert.
       </>
     ),

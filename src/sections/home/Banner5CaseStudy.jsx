@@ -11,15 +11,12 @@ const Banner5CaseStudy = () => {
                             <HammerIcon />
                             Case Study
                         </div>
-                        {/* <!-- /.sec-title__tagline --> */}
 
                         <h3 className="sec-title__title bw-split-in-up">
                             Our Recently Completed <br />
                             <span>Latest Case Study</span>
                         </h3>
-                        {/* <!-- /.sec-title__title --> */}
                     </div>
-                    {/* <!-- /.sec-title --> */}
                 </div>
                 <div className="container">
                     <div className="portfolio-one__wrapper">
@@ -42,7 +39,6 @@ const Banner5CaseStudy = () => {
                                 </h3>
                             </div>
                         </div>
-                        {/* <!-- item --> */}
                         <div className="portfolio-one__item">
                             <img
                                 src="assets/images/portfolio/portfolio-1-2.jpg"
@@ -62,7 +58,6 @@ const Banner5CaseStudy = () => {
                                 </h3>
                             </div>
                         </div>
-                        {/* <!-- item --> */}
                         <div className="portfolio-one__item active">
                             <img
                                 src="assets/images/portfolio/portfolio-1-3.jpg"
@@ -82,9 +77,7 @@ const Banner5CaseStudy = () => {
                                 </h3>
                             </div>
                         </div>
-                        {/* <!-- item --> */}
                     </div>
-                    {/* <!-- portfolio-one__wrapper --> */}
                 </div>
             </section>
         </>
