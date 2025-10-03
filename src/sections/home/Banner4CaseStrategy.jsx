@@ -6,10 +6,7 @@ const Banner4CaseStrategy = () => {
       <section style={{ backgroundColor: "#0B1A22", color: "#fff", padding: "60px 20px 60px 170px", }} className="case-strategy">
         <div className="container-fluid case-strategy-container">
           <div className="row mb-5 p-0">
-            <h2
-              className="sec-title__title p-0 mb-2"
-              style={{ fontWeight: "700", color: "#fff" }}
-            >
+            <h2 className="sec-title__title p-0 mb-2 text-white">
               End-to-End Support for <br /> Your Case Strategy
             </h2>
             {/* <h5 style={{ color: "#fff", fontWeight: "400", marginBottom: "20px" }} className="mt-2 p-0">
@@ -17,7 +14,7 @@ const Banner4CaseStrategy = () => {
             </h5> */}
 
             <div className="col-12 col-lg-7 p-0">
-              <p style={{ color: "#cfd2d4", lineHeight: "1.7", fontWeight:400 }}>
+              <p style={{ color: "#cfd2d4", lineHeight: "1.7", fontWeight: 400 }}>
                 From expert selection to courtroom support, Homestead is built
                 to serve your firm at every stage. We don’t just match you with
                 a qualified expert, we manage the process with precision,

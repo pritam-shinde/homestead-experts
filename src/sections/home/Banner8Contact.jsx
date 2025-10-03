@@ -1,4 +1,3 @@
-import HammerIcon from "../icons/HammerIcon";
 
 const Banner8Contact = () => {
   return (
@@ -6,7 +5,7 @@ const Banner8Contact = () => {
       <section className="contact-one">
         <div
           className="contact-one__bg"
-          style={{ background: "#1B2748" }}
+          style={{ background: "#0B1A22" }}
         ></div>
         <div className="contact-one__overlay"></div>
         <div className="container">
