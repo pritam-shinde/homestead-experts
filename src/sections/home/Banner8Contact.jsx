@@ -20,10 +20,13 @@ const Banner8Contact = () => {
                                     </div> */}
 
                   <h3 className="sec-title__title bw-split-in-up">
-                    <span className="text-white">Just a few details</span>{" "}
+                    <span className="text-white">Get Matched With</span>{" "}
                     <br />
-                    <span> will get us started.</span>{" "}
+                    <span> Your Expert</span>{" "}
                   </h3>
+
+                  <p className="contact-one__info__text text-white"> Just a few details will get us started.</p>
+
                 </div>
 
                 <div className="contact-one__content">
@@ -53,13 +56,15 @@ const Banner8Contact = () => {
                               (877) 244-3703
                             </a>
                           </p>
+                          <p className="main-footer__info__text"> 
                           <a
                             href="tel:+2195550114"
                             aria-label="Call us at (877) 244-3703"
-                            className="text-white"
+                            className="text-white" 
                           >
                             +21 9555-0114
                           </a>
+                          </p>
                         </div>
                       </div>
                     </li>

@@ -53,7 +53,7 @@ const Header = () => {
                             <ul className="main-menu__list">
                                 {menuData.map((item, idx) => (
                                     <li key={idx} className={item.children || item.megaMenu ? "dropdown" : ""}>
-                                        <a href={item.href || "#"} style={{ color: scrolled ? "#000000" : "#ffffff" }}>{item.label}</a>
+                                        <a  href={item.href || "#"} style={{ color: scrolled ? "#000000" : "#ffffff" }}>{item.label}</a>
 
                                         {/* Mega Menu for Home */}
                                         {item.megaMenu && (

@@ -1,32 +1,20 @@
-import { Inter, Marcellus, Open_Sans, Plus_Jakarta_Sans } from "next/font/google";
-// import "../../public/assets/css/procounsel.css";
+import { Montserrat, Merriweather } from "next/font/google";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import "./globals.css";
 
 // Configure fonts
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "700", "800"], // Regular, Bold, ExtraBold
+  variable: "--font-montserrat",
   display: "swap",
 });
 
-const marcellus = Marcellus({
+const merriweather = Merriweather({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-marcellus",
-  display: "swap",
-});
-
-const openSans = Open_Sans({
-  subsets: ["latin"],
-  variable: "--font-opensans",
-  display: "swap",
-});
-
-const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ["latin"],
-  variable: "--font-plusjakarta",
+  weight: ["700"], // Bold only (for subheads)
+  variable: "--font-merriweather",
   display: "swap",
 });
 
@@ -36,31 +24,20 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>
-          Homestead Experts - Medical Expert Witness Services
-        </title>
-        {/* <!-- favicons Icons --> */}
+        <title>Homestead Experts - Medical Expert Witness Services</title>
+
+        {/* favicons */}
         <link rel="icon" sizes="180x180" href="assets/images/favicons/favicon_180x180.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon_180x180.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon_180x180.png" />
-
-        {/* <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" /> */}
-
         <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+
         <meta
           name="description"
           content="Homestead Experts provides trusted medical expert witness services, connecting legal teams with certified specialists across all medical fields."
         />
 
-        {/* <!-- fonts --> */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Whisper&display=swap"
-          rel="stylesheet"
-        />
-
+        {/* vendor CSS */}
         <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
         <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
         <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
@@ -76,11 +53,11 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
         <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
 
-        {/* <!-- template styles --> */}
+        {/* template styles */}
         <link rel="stylesheet" href="assets/css/procounsel-dark.css" />
         <link rel="stylesheet" href="assets/css/procounsel.css" />
       </head>
-      <body className={`${inter.variable} ${marcellus.variable} ${openSans.variable} ${plusJakarta.variable} custom-cursor`}      >
+      <body className={`${montserrat.variable} ${merriweather.variable} custom-cursor`}>
         <Header />
         {children}
         <Footer />
@@ -88,6 +65,97 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+// import { Inter, Marcellus, Open_Sans, Plus_Jakarta_Sans } from "next/font/google";
+// // import "../../public/assets/css/procounsel.css";
+// import Footer from "@/components/footer/Footer";
+// import Header from "@/components/header/Header";
+// import "./globals.css";
+
+// // Configure fonts
+// const inter = Inter({
+//   subsets: ["latin"],
+//   variable: "--font-inter",
+//   display: "swap",
+// });
+
+// const marcellus = Marcellus({
+//   subsets: ["latin"],
+//   weight: "400",
+//   variable: "--font-marcellus",
+//   display: "swap",
+// });
+
+// const openSans = Open_Sans({
+//   subsets: ["latin"],
+//   variable: "--font-opensans",
+//   display: "swap",
+// });
+
+// const plusJakarta = Plus_Jakarta_Sans({
+//   subsets: ["latin"],
+//   variable: "--font-plusjakarta",
+//   display: "swap",
+// });
+
+// export default function RootLayout({ children }) {
+//   return (
+//     <html lang="en">
+//       <head>
+//         <meta charSet="UTF-8" />
+//         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+//         <title>
+//           Homestead Experts - Medical Expert Witness Services
+//         </title>
+//         {/* <!-- favicons Icons --> */}
+//         <link rel="icon" sizes="180x180" href="assets/images/favicons/favicon_180x180.png" />
+//         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon_180x180.png" />
+//         <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon_180x180.png" />
+
+//         {/* <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png" />
+//         <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png" /> */}
+
+//         <link rel="manifest" href="assets/images/favicons/site.webmanifest" />
+//         <meta
+//           name="description"
+//           content="Homestead Experts provides trusted medical expert witness services, connecting legal teams with certified specialists across all medical fields."
+//         />
+
+//         {/* <!-- fonts --> */}
+//         <link rel="preconnect" href="https://fonts.googleapis.com" />
+//         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+//         <link
+//           href="https://fonts.googleapis.com/css2?family=Marcellus&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Whisper&display=swap"
+//           rel="stylesheet"
+//         />
+
+//         <link rel="stylesheet" href="assets/vendors/bootstrap/css/bootstrap.min.css" />
+//         <link rel="stylesheet" href="assets/vendors/bootstrap-select/bootstrap-select.min.css" />
+//         <link rel="stylesheet" href="assets/vendors/animate/animate.min.css" />
+//         <link rel="stylesheet" href="assets/vendors/fontawesome/css/all.min.css" />
+//         <link rel="stylesheet" href="assets/vendors/jquery-ui/jquery-ui.css" />
+//         <link rel="stylesheet" href="assets/vendors/jarallax/jarallax.css" />
+//         <link rel="stylesheet" href="assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css" />
+//         <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.min.css" />
+//         <link rel="stylesheet" href="assets/vendors/nouislider/nouislider.pips.css" />
+//         <link rel="stylesheet" href="assets/vendors/tiny-slider/tiny-slider.css" />
+//         <link rel="stylesheet" href="assets/vendors/procounsel-icons/style.css" />
+//         <link rel="stylesheet" href="assets/vendors/slick/slick.css" />
+//         <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.carousel.min.css" />
+//         <link rel="stylesheet" href="assets/vendors/owl-carousel/css/owl.theme.default.min.css" />
+
+//         {/* <!-- template styles --> */}
+//         <link rel="stylesheet" href="assets/css/procounsel-dark.css" />
+//         <link rel="stylesheet" href="assets/css/procounsel.css" />
+//       </head>
+//       <body className={`${inter.variable} ${marcellus.variable} ${openSans.variable} ${plusJakarta.variable} custom-cursor`}      >
+//         <Header />
+//         {children}
+//         <Footer />
+//       </body>
+//     </html>
+//   );
+// }
 
 
 // import "./globals.css";

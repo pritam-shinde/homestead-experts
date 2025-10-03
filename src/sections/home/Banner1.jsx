@@ -31,7 +31,7 @@ export default function Banner1() {
                 <div className="row">
                   <div className="col-md-12">
                     <div className="main-slider-one__content">
-                      <h2 className="main-slider-one__title">{slide.title}</h2>
+                      <h1 className="main-slider-one__title">{slide.title}</h1>
                       <p className="main-slider-one__text">{slide.text}</p>
 
                       {/* <div className="main-slider-one__btn"> */}

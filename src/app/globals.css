@@ -30,13 +30,6 @@ body {
   margin: 0;
 }
 
-@font-face {
-  font-family: "Kinatika";
-  src: url("/fonts/Kinetika-Bold.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; /* good for performance */
-}
 
 
 a {

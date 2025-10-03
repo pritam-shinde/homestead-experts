@@ -14,8 +14,10 @@
 # Client Carousel
 --------------------------------------------------------------*/
 :root {
-  --procounsel-font: "Plus Jakarta Sans", sans-serif;
-  --procounsel-heading-font: "Marcellus", serif;
+  --procounsel-font: "Montserrat", sans-serif;
+ --procounsel-heading-font: "Montserrat", serif;
+  /* --procounsel-font: "Plus Jakarta Sans", sans-serif;
+  --procounsel-heading-font: "Marcellus", serif; */
   --procounsel-special-font: "Whisper", cursive;
   --procounsel-text: #838790;
   --procounsel-text-rgb: 131, 135, 144;

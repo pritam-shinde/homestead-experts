@@ -14,8 +14,10 @@
 # Client Carousel
 --------------------------------------------------------------*/
 :root {
-  --procounsel-font: "Plus Jakarta Sans", sans-serif;
-  --procounsel-heading-font: "Kinatika", serif;
+  --procounsel-font: "Montserrat", sans-serif;
+  --procounsel-heading-font: "Montserrat", serif;
+  /* --procounsel-font: "Plus Jakarta Sans", sans-serif; */
+  /* --procounsel-heading-font: "Kinatika", serif; */
   --procounsel-special-font: "Whisper", cursive;
   --procounsel-text: #838790;
   --procounsel-text-rgb: 131, 135, 144;
@@ -44,13 +46,13 @@
   --procounsel-border-color-rgb: 217, 217, 217;
   --procounsel-letter-space: 0.1em;
   --procounsel-letter-space-xl: 0.2em;
-  --homestead-bg:#0e222a;
+  --homestead-bg: #0e222a;
 }
 
 /*--------------------------------------------------------------
 # Utility
 --------------------------------------------------------------*/
-.bg-color{
+.bg-color {
   background-color: var(--procounsel-base);
 }
 
@@ -266,7 +268,8 @@
 # Common
 --------------------------------------------------------------*/
 body {
-  font-family: var(--procounsel-font, "Plus Jakarta Sans", sans-serif);
+  font-family: var(--procounsel-font, "Montserrat", sans-serif);
+  /* font-family: var(--procounsel-font, "Plus Jakarta Sans", sans-serif); */
   color: var(--procounsel-text, #838790);
   font-size: 16px;
   line-height: 1.875;
@@ -294,13 +297,33 @@ a:visited {
   opacity: 1;
 }
 
-h1,
+p {
+  font-family: var(--procounsel-font, "Montserrat", sans-serif);
+  font-weight: 500 !important;
+}
+
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-family: var(--procounsel-heading-font, "Kinatika", serif);
+  color: var(--procounsel-black, #0e0b06);
+} */
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--procounsel-heading-font, "Montserrat", serif);
+  color: var(--procounsel-black, #0e0b06);
+  font-weight: 700 !important;
+}
+
+h2 {
+  font-family: var(--procounsel-heading-font, "Merriweather", serif);
   color: var(--procounsel-black, #0e0b06);
 }
 
@@ -3810,7 +3833,7 @@ h6 {
 --------------------------------------------------------------*/
 .main-footer {
   position: relative;
-  background-color:#0B1A22;
+  background-color: #0B1A22;
   /* background-color:#0e222a; */
 }
 
@@ -4021,7 +4044,8 @@ h6 {
 
 .footer-widget__title {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 600;
+  /* font-weight: 400; */
   color: var(--procounsel-white, #fff);
   text-transform: capitalize;
   margin: 0 0 18px;
@@ -4048,7 +4072,7 @@ h6 {
 }
 
 .footer-widget__links li {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   color: var(--procounsel-text-dark, #7782A0);
@@ -6128,7 +6152,7 @@ h6 {
   align-items: center;
   color: var(--procounsel-white, #fff);
   font-weight: 400;
-  text-transform: capitalize;
+  text-transform: uppercase !important;
   position: relative;
   transition: all 500ms ease;
   font-family: var(--procounsel-heading-font, "Marcellus", serif);
@@ -16579,7 +16603,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .main-slider-one__title {
   color: var(--procounsel-white, #fff);
-  font-family: "Kinatika", serif;
+  font-family: "Montserrat", serif;
   font-size: 90px;
   line-height: 100px;
   font-weight: 400;
@@ -19717,6 +19741,13 @@ body.megamenu-popup-active .mobile-nav__content {
   .feature-one {
     padding: 0px !important;
   }
+
+  .main-slider-one__carousel{
+    min-height: 78vh;
+  }
+  .main-slider-one__overlay-two {
+    bottom: -100px;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
@@ -19725,7 +19756,7 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 
   .tailored-redline {
-    top: 44% !important;
+    top: 42% !important;
     height: 14px !important;
     background-size: contain !important;
   }
@@ -19734,9 +19765,9 @@ body.megamenu-popup-active .mobile-nav__content {
     padding: 0px !important;
   }
 
-  .case-strategy {
+  /* .case-strategy {
     padding: 0px 20px 0px 20px !important;
-  }
+  } */
 
   .case-strategy-container {
     margin: 0px !important;
@@ -19744,27 +19775,32 @@ body.megamenu-popup-active .mobile-nav__content {
 
   .case-strategy-cards {
     align-items: start !important;
-    gap:24px !important;
+    gap: 24px !important;
   }
 
   .case-strategy-cards img {
     width: 60px !important;
     height: 60px !important;
   }
-  .fs-15{
+
+  .fs-15 {
     font-size: 16px !important;
   }
 
- .main-slider-one {
+  .main-slider-one {
     min-height: 65vh !important;
   }
-  .main-slider-one__carousel{
-    min-height: 93vh;
+
+  .main-slider-one__carousel {
+    min-height: 72vh;
+    /* min-height: 93vh; */
   }
-  .main-slider-one__overlay-one{
+
+  .main-slider-one__overlay-one {
     height: 112% !important;
   }
-  .main-slider-one__bg{
+
+  .main-slider-one__bg {
     background-position: 75% !important;
   }
 }

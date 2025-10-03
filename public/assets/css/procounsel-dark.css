@@ -48,11 +48,12 @@ body.boxed-wrapper .page-wrapper {
 .testimonials-card,
 .contact-one__form .form-one__group,
 .contact-one__info {
-  background-color: #0B1A22;
+  background: linear-gradient(to right, #0E222A, #247ba0);
+  /* background-color: #0B1A22; */
   /* background-color: var(--procounsel-black); */
 }
 
-.form-one .bootstrap-select > .dropdown-toggle,
+.form-one .bootstrap-select>.dropdown-toggle,
 .form-one input[type=text],
 .form-one input[type=email],
 .form-one textarea {
@@ -135,7 +136,7 @@ body.boxed-wrapper .page-wrapper {
   border-color: rgba(var(--procounsel-white-rgb), 0.2);
 }
 
-.main-menu .main-menu__list > li > a,
+.main-menu .main-menu__list>li>a,
 .why-choose-one__item__icon,
 .work-process-one__item__icon__inner,
 .testimonials-card__name,
@@ -166,10 +167,11 @@ h6 {
   border-color: var(--procounsel-white);
 }
 
-.about-one .procounsel-btn > i {
+.about-one .procounsel-btn>i {
   border: none;
 }
-.about-one .procounsel-btn > i span {
+
+.about-one .procounsel-btn>i span {
   background-color: var(--procounsel-white);
 }
 
@@ -185,7 +187,9 @@ h6 {
   color: var(--procounsel-primary);
   background-color: var(--procounsel-white);
 }
+
 .why-choose-one .procounsel-btn:hover {
   color: var(--procounsel-white);
 }
+
 /*# sourceMappingURL=procounsel-dark.css.map */
