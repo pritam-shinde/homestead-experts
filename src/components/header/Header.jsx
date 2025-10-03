@@ -20,6 +20,7 @@ const Header = () => {
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
+
     // Recursive render function for dropdowns
     const renderMenu = (items) => (
         <ul className="sub-menu">
@@ -35,7 +36,8 @@ const Header = () => {
     return (
         <>
             <header className="main-header sticky-header sticky-header--normal"
-                style={{position: scrolled ? "fixed" : "relative", top: 0, left: 0, width: "100%", zIndex: 999, backgroundColor: scrolled ? "#ffffff" : "#0B1A22", boxShadow: scrolled ? "0 4px 12px rgba(0,0,0,0.15)" : "none", transition: "all 0.3s ease-in-out",
+                style={{
+                    position: scrolled ? "fixed" : "relative", top: 0, left: 0, width: "100%", zIndex: 999, backgroundColor: scrolled ? "#ffffff" : "#0B1A22", boxShadow: scrolled ? "0 4px 12px rgba(0,0,0,0.15)" : "none", transition: "all 0.3s ease-in-out",
                 }}>
                 <div className="container-fluid">
                     <div className="main-header__inner" style={{ width: "100%", margin: 0, gap: "32px" }}>
@@ -131,8 +133,9 @@ const Header = () => {
                 </div>
                 {/* mobile-nav__wrapper start */}
                 <div className="mobile-nav__wrapper">
+
                     <div className="mobile-nav__overlay mobile-nav__toggler"></div>
-                    {/* <!-- /.mobile-nav__overlay --> */}
+
                     <div className="mobile-nav__content">
                         <span className="mobile-nav__close mobile-nav__toggler">
                             <i className="fa fa-times"></i>
@@ -140,10 +143,10 @@ const Header = () => {
 
                         <div className="logo-box">
                             <a href="/" aria-label="logo image">
-                                <Image src={"/assets/images/logos/homestead-experts-logo-light.png"} alt="Homestead Experts" width={140} height={30} style={{ width: "100%", objectFit: "contain" }} />
-                                {/* <img src="assets/images/logo-light.png" width="155" alt="" /> */}
+                                <Image src={"/assets/images/logos/homestead-experts-logo-light.png"} alt="Homestead Experts" width={140} height={35} style={{ width: "100%", objectFit: "contain" }} />
                             </a>
                         </div>
+
                         <div className="mobile-nav__container"></div>
 
                         <ul className="mobile-nav__contact list-unstyled">
@@ -179,54 +182,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                {/* <!-- /.mobile-nav__wrapper End --> */}
             </header>
-            <div className="mobile-nav__wrapper">
-                <div className="mobile-nav__overlay mobile-nav__toggler"></div>
-
-                <div className="mobile-nav__content">
-                    <span className="mobile-nav__close mobile-nav__toggler">
-                        <i className="fa fa-times"></i>
-                    </span>
-
-                    <div className="logo-box">
-                        <Image src={scrolled ? "/assets/images/logos/homestead-experts-logo-dark01.png" : "/assets/images/logos/homestead-experts-logo-light.png"} alt="Procounsel" width={140} height={30} style={{ width: "100%", objectFit: "contain" }} />
-                    </div>
-
-                    <div className="mobile-nav__container"></div>
-                    <ul className="mobile-nav__contact list-unstyled">
-                        <li>
-                            <i className="fa fa-envelope"></i>
-                            <a href="mailto:needhelp@procounsel.com">
-                                needhelp@procounsel.com
-                            </a>
-                        </li>
-                        <li>
-                            <i className="fa fa-phone-alt"></i>
-                            <a href="tel:666-888-0000">666 888 0000</a>
-                        </li>
-                    </ul>
-
-                    <div className="mobile-nav__social">
-                        <a href="https://facebook.com">
-                            <i className="icon-facebook"></i>
-                            <span className="sr-only">Facebook</span>
-                        </a>
-                        <a href="https://pinterest.com">
-                            <i className="icon-pinterest"></i>
-                            <span className="sr-only">Pinterest</span>
-                        </a>
-                        <a href="https://twitter.com">
-                            <i className="icon-twitter"></i>
-                            <span className="sr-only">Twitter</span>
-                        </a>
-                        <a href="https://youtube.com">
-                            <i className="icon-youtube"></i>
-                            <span className="sr-only">Youtube</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
         </>
     );
 };

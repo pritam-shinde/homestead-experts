@@ -25,6 +25,7 @@ export default function Home() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+  
   useEffect(() => {
     const scriptUrls = [
       "/assets/vendors/jquery/jquery-3.7.1.min.js",
@@ -122,8 +123,7 @@ export default function Home() {
             backgroundSize: "160% 90%", backgroundPosition: "right center",
             backgroundColor: "#0B1A22",
             // backgroundColor: "#050d22",
-          }}
-        >
+          }}>
           <div className="container">
             <div className="row">
               <div className="col-lg-12 wow fadeInRight" data-wow-delay="300ms">
@@ -241,54 +241,36 @@ export default function Home() {
         </span>
       </a>
       <Script src="/assets/vendors/jquery/jquery-3.7.1.min.js" strategy="afterInteractive"></Script>
-      <Script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/bootstrap-select/bootstrap-select.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/jarallax/jarallax.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/jquery-ui/jquery-ui.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/jquery-appear/jquery.appear.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/jquery-validate/jquery.validate.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/nouislider/nouislider.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/tiny-slider/tiny-slider.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/wnumb/wNumb.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/owl-carousel/js/owl.carousel.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/wow/wow.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/imagesloaded/imagesloaded.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/isotope/isotope.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/slick/slick.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/tilt/tilt.jquery.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/countdown/countdown.min.js" strategy="afterInteractive"      ></Script>
-      <Script src="/assets/vendors/jquery-circleType/jquery.circleType.js" strategy="afterInteractive"      ></Script>
-      <Script
-        src="/assets/vendors/jquery-lettering/jquery.lettering.min.js"
-        strategy="afterInteractive"
-      ></Script>
+      <Script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/bootstrap-select/bootstrap-select.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jarallax/jarallax.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-ui/jquery-ui.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-appear/jquery.appear.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-validate/jquery.validate.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/nouislider/nouislider.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/tiny-slider/tiny-slider.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/wnumb/wNumb.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/owl-carousel/js/owl.carousel.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/wow/wow.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/imagesloaded/imagesloaded.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/isotope/isotope.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/slick/slick.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/tilt/tilt.jquery.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/countdown/countdown.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-circleType/jquery.circleType.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/jquery-lettering/jquery.lettering.min.js" strategy="afterInteractive"></Script>
 
       {/* <!-- gsap js --> */}
-      <Script
-        src="/assets/vendors/gsap/gsap.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/gsap/scrolltrigger.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/gsap/splittext.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/gsap/procounsel-split.js"
-        strategy="afterInteractive"
-      ></Script>
+      <Script src="/assets/vendors/gsap/gsap.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/gsap/scrolltrigger.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/gsap/splittext.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/gsap/procounsel-split.js" strategy="afterInteractive"></Script>
 
       {/* <!-- template js --> */}
-      <Script
-        src="/assets/js/procounsel.js"
-        strategy="afterInteractive"
-      ></Script>
+      <Script src="/assets/js/procounsel.js" strategy="afterInteractive"></Script>
     </>
   );
 }
