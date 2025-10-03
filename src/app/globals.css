@@ -44,6 +44,10 @@ a {
   text-decoration: none;
 }
 
+.bg-navy-color{
+  background-color: #0B1A22 !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -154,3 +158,63 @@ a {
 /* .main-slider-one__carousel div:not(.owl-dots){
   height: 100vh;
 } */
+
+.tailored-section {
+  height: 60vh;
+  color: #fff;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.tailored-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url('/assets/images/backgrounds/section-3-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.tailored-redline {
+  position: absolute;
+  left: -2px;
+  right: 0;
+  top: 42%;
+  height: 12px;
+  background-image: url('/assets/images/backgrounds/red-line-09.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  z-index: 1;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.tailored-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  height: 100%;
+  text-align: center;
+}
+
+.tailored-subtitle {
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #dcdcdc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.tailored-text {
+  max-width: 600px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}

@@ -251,7 +251,7 @@ const About = () => {
                 {/* <Banner6Team /> */}
                 {/* <Testimonials /> */}
 
-                <section className="cta-three">
+                <section className="cta-three ">
                     <div className="container wow fadeInUp" data-wow-delay="200ms">
                         <div className="cta-three__inner">
                             <div className="cta-three__inner__shape" style={{ backgroundImage: "url(assets/images/shapes/cta-shape-3-1.png)" }}></div>
@@ -268,7 +268,7 @@ const About = () => {
                     </div>
                 </section>
 
-                <div className="barnds-one barnds-one-about">
+                <div className="barnds-one barnds-one-about bg-navy-color">
                     <div className="container">
                         <div className="barnds-one__inner wow fadeInUp" data-wow-delay="300ms">
                             <div className="row">

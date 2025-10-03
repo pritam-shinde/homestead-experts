@@ -19729,10 +19729,6 @@ body.megamenu-popup-active .mobile-nav__content {
     background-size: contain !important;
   }
 
-  .main-slider-one {
-    min-height: 65vh !important;
-  }
-
   .feature-one {
     padding: 0px !important;
   }
@@ -19756,6 +19752,19 @@ body.megamenu-popup-active .mobile-nav__content {
   }
   .fs-15{
     font-size: 16px !important;
+  }
+
+ .main-slider-one {
+    min-height: 65vh !important;
+  }
+  .main-slider-one__carousel{
+    min-height: 93vh;
+  }
+  .main-slider-one__overlay-one{
+    height: 112% !important;
+  }
+  .main-slider-one__bg{
+    background-position: 75% !important;
   }
 }
 

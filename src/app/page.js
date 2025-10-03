@@ -65,28 +65,17 @@ export default function Home() {
       <div className="custom-cursor__cursor"></div>
       <div className="custom-cursor__cursor-two"></div>
 
+      {/* <!-- preloader --> */}
       {/* <div className="preloader">
-        <div
-          className="preloader__image"
-          style={{ backgroundImage: "url(assets/images/loader.png)" }}
-        ></div>
+        <div className="preloader__image" style={{ backgroundImage: "url(assets/images/loader.png)" }}></div>
       </div> */}
-      {/* <!-- /.preloader --> */}
 
       <div className="page-wrapper">
         {/* <!-- main-slider-start --> */}
         <Banner1 />
 
         <section className="feature-one">
-          <div className="container" style={{
-            maxWidth: "1200px",
-            width: "100%",
-            zIndex: 10,
-            backgroundColor: "#050d22",
-            padding: "40px 40px 0",
-            // borderRadius: "8px",
-            boxShadow: "0 4px 12px rgba(0,0,0,0.9)",
-          }}>
+          <div className="container" style={{ maxWidth: "1200px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)" }}>
             <div className="feature-one__inner">
               <div className="row gutter-y-0">
                 <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
@@ -95,7 +84,7 @@ export default function Home() {
                       <i className="icon-calendar"></i>
                     </div>
                     <h3 className="feature-one__item__title">
-                      <Link href="#" className="text-white"> Find Your <br /> Expert Witness </Link>
+                      <Link href="#" className="text-white">Find Your <br /> Expert Witness </Link>
                     </h3>
                   </div>
                 </div>
@@ -123,7 +112,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
 
         {/* <!-- Start about-one --> */}
         <section
@@ -190,81 +178,19 @@ export default function Home() {
         </section>
 
         {/*Tailored Section  */}
-        <section
-          className="tailored-section"
-          style={{
-            height: "60vh",
-            color: "#fff",
-            padding: "60px 0",
-            position: "relative",
-            overflow: "hidden",
-          }}
-        >
-          <div
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              height: "100%",
-              width: "100%",
-              backgroundImage: "url('/assets/images/backgrounds/section-3-bg.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              zIndex: 0,
-            }}
-          ></div>
+        <section className="tailored-section">
+          <div className="tailored-bg"></div>
 
-          <div
-            className="tailored-redline"
-            style={{
-              position: "absolute",
-              left: "-2px",
-              right: 0,
-              top: "42%",
-              transform: "translateY(-50%)",
-              height: "12px",
-              backgroundImage: "url('/assets/images/backgrounds/red-line-09.png')",
-              backgroundRepeat: "no-repeat",
-              backgroundSize: "cover",
-              width: "100%",
-              zIndex: 1,
-              transform: "translateY(-50%) scaleX(-1)",
-            }}
-          ></div>
+          <div className="tailored-redline"></div>
 
-          <div
-            className="container"
-            style={{
-              position: "relative",
-              zIndex: 1,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "start",
-              flexDirection: "column",
-              height: "100%",
-              textAlign: "center",
-            }}
-          >
+          <div className="container tailored-content">
             <h2 className="sec-title__title text-white text-start">
               Tailored Search. Every Time.
             </h2>
-            <h4
-              className=" text-start"
-              style={{
-                fontWeight: "600",
-                marginBottom: "20px",
-                color: "#dcdcdc",
-                display: "inline-block",
-                paddingBottom: "5px",
-              }}
-            >
+            <h4 className="tailored-subtitle text-start">
               Custom Recruitment for Complex Matters
             </h4>
-            <p
-              style={{ maxWidth: "600px", marginBottom: "20px", fontWeight: 400 }}
-              className=" text-start"
-            >
+            <p className="tailored-text text-start">
               We don&apos;t pull from static databases. When your case calls for
               niche expertise, our team actively recruits and verifies new
               experts on your behalf, managing outreach, vetting, and scheduling
@@ -294,18 +220,9 @@ export default function Home() {
       <div className="search-popup">
         <div className="search-popup__overlay search-toggler"></div>
         <div className="search-popup__content">
-          <form
-            role="search"
-            method="get"
-            className="search-popup__form"
-            action="#"
-          >
+          <form role="search" method="get" className="search-popup__form" action="#">
             <input type="text" id="search" placeholder="Search Here..." />
-            <button
-              type="submit"
-              aria-label="search submit"
-              className="procounsel-btn"
-            >
+            <button type="submit" aria-label="search submit" className="procounsel-btn">
               <i>
                 <i className="icon-search"></i>
               </i>
@@ -323,90 +240,27 @@ export default function Home() {
           <span className="scroll-to-top__inner"></span>
         </span>
       </a>
-      <Script
-        src="/assets/vendors/jquery/jquery-3.7.1.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/bootstrap-select/bootstrap-select.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jarallax/jarallax.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-ui/jquery-ui.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-appear/jquery.appear.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-validate/jquery.validate.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/nouislider/nouislider.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/tiny-slider/tiny-slider.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/wnumb/wNumb.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/owl-carousel/js/owl.carousel.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/wow/wow.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/imagesloaded/imagesloaded.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/isotope/isotope.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/slick/slick.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/tilt/tilt.jquery.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/countdown/countdown.min.js"
-        strategy="afterInteractive"
-      ></Script>
-      <Script
-        src="/assets/vendors/jquery-circleType/jquery.circleType.js"
-        strategy="afterInteractive"
-      ></Script>
+      <Script src="/assets/vendors/jquery/jquery-3.7.1.min.js" strategy="afterInteractive"></Script>
+      <Script src="/assets/vendors/bootstrap/js/bootstrap.bundle.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/bootstrap-select/bootstrap-select.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/jarallax/jarallax.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/jquery-ui/jquery-ui.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/jquery-appear/jquery.appear.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/jquery-validate/jquery.validate.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/nouislider/nouislider.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/tiny-slider/tiny-slider.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/wnumb/wNumb.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/owl-carousel/js/owl.carousel.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/wow/wow.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/imagesloaded/imagesloaded.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/isotope/isotope.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/slick/slick.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/tilt/tilt.jquery.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/countdown/countdown.min.js" strategy="afterInteractive"      ></Script>
+      <Script src="/assets/vendors/jquery-circleType/jquery.circleType.js" strategy="afterInteractive"      ></Script>
       <Script
         src="/assets/vendors/jquery-lettering/jquery.lettering.min.js"
         strategy="afterInteractive"

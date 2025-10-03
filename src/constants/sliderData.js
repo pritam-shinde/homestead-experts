@@ -4,7 +4,9 @@ export const sliderData = [
     // bg: "assets/images/backgrounds/resized_corporate_men.jpg",
     title: (
       <>
-        Trusted. Vetted. <br /> Trial-Ready.
+        <span className="d-block d-md-inline">Trusted.</span>
+        <span className="d-block d-md-inline"> Vetted.</span>
+        <span className="d-block"> Trial-Ready.</span>
       </>
     ),
     text: (
@@ -19,7 +21,9 @@ export const sliderData = [
     bg: "assets/images/backgrounds/slider-1-2-new.jpg",
     title: (
       <>
-        Speed When <br /> It Matters Most.
+        <span className="d-block d-sm-inline">Speed When</span>
+        <span className="d-block d-sm-inline"> It Matters</span>
+        <span className="d-block d-sm-inline"> Most.</span>
       </>
     ),
     text: (

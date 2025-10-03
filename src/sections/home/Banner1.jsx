@@ -22,10 +22,7 @@ export default function Banner1() {
         {sliderData.map((slide, index) => (
           <div className="item" key={index}>
             <div className="main-slider-one__item">
-              <div
-                className="main-slider-one__bg"
-                style={{ backgroundImage: `url(${slide.bg})` }}
-              ></div>
+              <div className="main-slider-one__bg" style={{ backgroundImage: `url(${slide.bg})`}}></div>
 
               <div className="main-slider-one__overlay-one"></div>
               <div className="main-slider-one__overlay-two"></div>
@@ -38,10 +35,10 @@ export default function Banner1() {
                       <p className="main-slider-one__text">{slide.text}</p>
 
                       {/* <div className="main-slider-one__btn"> */}
-                        <a href="#" className="procounsel-btn">
-                          <i> Discover More</i>
-                          <span> Discover More</span>
-                        </a>
+                      <a href="#" className="procounsel-btn">
+                        <i> Discover More</i>
+                        <span> Discover More</span>
+                      </a>
                       {/* </div> */}
                     </div>
                   </div>
