@@ -192,7 +192,7 @@ export default function Home() {
           </div>
 
           <div className="tailored-redline1 test" style={{ position: "relative", objectFit:"cover" }}>
-            <Image src="/assets/images/backgrounds/red-line-09.png" alt="redline" width={2000} height={16} style={{width :"100%"}} />
+            <Image src="/assets/images/backgrounds/red-line-09.png" alt="redline" width={2000} height={16}  style={{ transform: "rotateY(180deg)", width: "100%", position: "relative"  }} />
           </div>
 
           <div className="container">

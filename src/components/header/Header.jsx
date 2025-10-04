@@ -111,7 +111,7 @@ const Header = () => {
                                 <span style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}></span>
                             </div>
                             <div className="main-header__btn">
-                                <a href="#" className="procounsel-btn">
+                                <a href="#" className="procounsel-btn text-uppercase">
                                     <i>Get a Quote</i>
                                     <span>Get a Quote</span>
                                 </a>
