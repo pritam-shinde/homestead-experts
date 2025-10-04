@@ -30,14 +30,12 @@ body {
   margin: 0;
 }
 
-
-
 a {
   color: inherit;
   text-decoration: none;
 }
 
-.bg-navy-color{
+.bg-navy-color {
   background-color: #0B1A22 !important;
 }
 
@@ -48,11 +46,11 @@ a {
 }
 
 @media (min-width: 360px) and (max-width: 576px) {
-   .bg-slider-1{
-   background-position: 70% !important;
-   background-size: cover !important;
-   background-repeat: no-repeat;
-   height: 120% !important;
+  .bg-slider-1 {
+    background-position: 70% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    height: 120% !important;
   }
 }
 
@@ -113,11 +111,13 @@ a {
 }
 
 .small-plus {
-    font-size: 0.6em;   /* make + smaller */
-    vertical-align: super; /* align like a superscript */
-  }
+  font-size: 0.6em;
+  /* make + smaller */
+  vertical-align: super;
+  /* align like a superscript */
+}
 
-  /* in your global CSS */
+/* in your global CSS */
 .sticky-header--fixed {
   transform: translateY(-100%);
   animation: slideDown 0.3s ease forwards;
@@ -137,12 +137,15 @@ a {
     border-radius: 0 !important;
     left: auto;
     transform: none;
-    margin: 0 auto; /* still centers within parent */
+    margin: 0 auto;
+    /* still centers within parent */
   }
-  .feature-one{
-    box-shadow: none !important;    
+
+  .feature-one {
+    box-shadow: none !important;
   }
-  .feature-one__inner{
+
+  .feature-one__inner {
     width: 80%;
     margin: 0 auto;
   }
@@ -158,6 +161,18 @@ a {
   padding: 60px 0;
   position: relative;
   overflow: hidden;
+}
+
+#tailored-background {
+  /* position: absolute; */
+  /* top: 0;
+  left: 0; */
+  height: 100%;
+  width: 100%;
+  background-image: url('/assets/images/backgrounds/section-3-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .tailored-bg {
@@ -200,7 +215,7 @@ a {
 
 .tailored-subtitle {
   font-weight: 600;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   color: #dcdcdc;
   display: inline-block;
   padding-bottom: 5px;
@@ -211,3 +226,8 @@ a {
   margin-bottom: 20px;
   font-weight: 400;
 }
+
+.margin-about{
+  margin-top:200px !important;
+}
+

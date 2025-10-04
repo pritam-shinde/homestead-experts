@@ -4,6 +4,7 @@ import Banner1 from "@/sections/home/Banner1";
 import Banner4CaseStrategy from "@/sections/home/Banner4CaseStrategy";
 import Banner5CaseStudy from "@/sections/home/Banner5CaseStudy";
 import Banner8Contact from "@/sections/home/Banner8Contact";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Script from "next/script";
@@ -25,7 +26,7 @@ export default function Home() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  
+
   useEffect(() => {
     const scriptUrls = [
       "/assets/vendors/jquery/jquery-3.7.1.min.js",
@@ -75,7 +76,7 @@ export default function Home() {
         {/* <!-- main-slider-start --> */}
         <Banner1 />
 
-        <section className="feature-one">
+        {/* <section className="feature-one">
           <div className="container" style={{ maxWidth: "1200px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)" }}>
             <div className="feature-one__inner">
               <div className="row gutter-y-0">
@@ -112,11 +113,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>
+
+        </section> */}
 
         {/* <!-- Start about-one --> */}
         <section
-          className="about-one"
+          className="about-one "
           id="about"
           style={{
             background: "url(assets/images/backgrounds/section-2-1-bg.png)", backgroundRepeat: "no-repeat",
@@ -125,7 +127,7 @@ export default function Home() {
             // backgroundColor: "#050d22",
           }}>
           <div className="container">
-            <div className="row">
+            <div className="row margin-about">
               <div className="col-lg-12 wow fadeInRight" data-wow-delay="300ms">
                 <div className="about-one__inner">
                   <div className="about-one__content">
@@ -135,9 +137,9 @@ export default function Home() {
                         Experts You Can Build On
                       </div> */}
 
-                      <h3 className="sec-title__title bw-split-in-up">
+                      <h2 className="sec-title__title bw-split-in-up">
                         Credibility You Can Rely On, <span>Coast to Coast</span>
-                      </h3>
+                      </h2>
                     </div>
 
                     <p className="about-one__content__text">
@@ -178,11 +180,8 @@ export default function Home() {
         </section>
 
         {/*Tailored Section  */}
-        <section className="tailored-section">
-          <div className="tailored-bg"></div>
-
-          <div className="tailored-redline"></div>
-
+        <section className="tailored-section" id="tailored-background" >
+          {/* <div className="tailored-bg"></div> */}
           <div className="container tailored-content">
             <h2 className="sec-title__title text-white text-start">
               Tailored Search. Every Time.
@@ -190,13 +189,20 @@ export default function Home() {
             <h4 className="tailored-subtitle text-start">
               Custom Recruitment for Complex Matters
             </h4>
-            <p className="tailored-text text-start">
-              We don&apos;t pull from static databases. When your case calls for
-              niche expertise, our team actively recruits and verifies new
-              experts on your behalf, managing outreach, vetting, and scheduling
-              so you can stay focused on strategy.
-            </p>
-            <div className="d-flex justify-content-start">
+          </div>
+
+          <div className="tailored-redline1 test" style={{ position: "relative", objectFit:"cover" }}>
+            <Image src="/assets/images/backgrounds/red-line-09.png" alt="redline" width={2000} height={16} style={{width :"100%"}} />
+          </div>
+
+          <div className="container">
+            <div className="tailored-para">
+              <p className="tailored-para" style={{position:"relative", color:"#fff"}}>
+                We don&apos;t pull from static databases. When your case calls for
+                niche expertise, our team actively recruits and verifies new
+                experts on your behalf, managing outreach, vetting, and scheduling
+                so you can stay focused on strategy.
+              </p>
               <a href="#" className="procounsel-btn">
                 <i>REQUEST AN EXPERT</i>
                 <span>REQUEST AN EXPERT</span>
