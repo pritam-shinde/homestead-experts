@@ -11,7 +11,7 @@ export default function Banner1() {
           "animateOut": "fadeOut",
           "animateIn": "fadeIn",
           "items": 1,
-          "autoplay": false,
+          "autoplay": true,
           "autoplayTimeout": 7000,
           "smartSpeed": 1000,
           "nav": false,
