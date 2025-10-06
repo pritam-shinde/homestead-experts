@@ -19139,8 +19139,8 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .feature-one__item__title {
   font-weight: 400;
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 28px;
+  line-height: 32px;
   text-transform: capitalize;
   color: var(--procounsel-white, #fff);
   margin-bottom: 0;
@@ -19937,6 +19937,10 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 @media (min-width: 320px) and (max-width: 429px) {
+  .feature-one__item__title {
+    font-size: 18px;
+  }
+
   .owl-carousel .owl-stage-outer {
     height: 70vh !important;
   }
