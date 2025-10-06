@@ -18,8 +18,8 @@ export const sliderData = [
     ),
   },
   {
-    bg: "assets/images/backgrounds/slider-3-new.jpg",
-    // bg: "assets/images/backgrounds/slider-1-2-new.jpg",
+    // bg: "assets/images/backgrounds/slider-3-new.jpg",
+    bg: "assets/images/backgrounds/slider-1-2-new.jpg",
     title: (
       <>
         <span className="d-block d-sm-inline">Speed When</span>
