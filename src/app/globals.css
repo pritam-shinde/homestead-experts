@@ -227,7 +227,165 @@ a {
   font-weight: 400;
 }
 
-.margin-about{
-  margin-top:200px !important;
+
+/* Base styles for all slides */
+.hero-slide {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+/* Dark overlay */
+.hero-slide .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Content styling */
+.hero-slide .content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  animation: fadeUp 1s ease-in-out;
+}
+
+.hero-slide h1 {
+  color: #fff;
+  font-size: 3.5rem;
+  font-family: "Montserrat", serif;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.hero-slide p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.hero-slide button {
+  background-color: #b98946;
+  color: #fff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.hero-slide button:hover {
+  background-color: #fb3640;
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Pagination dots */
+.swiper-pagination-bullet {
+  background: #fff !important;
+  opacity: 0.8;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+}
+
+/* Responsive typography */
+@media (max-width: 991px) {
+  .hero-slide h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-slide p {
+    font-size: 1rem;
+  }
+}
+
+/* Target Swiper pagination */
+.heroSwiper .swiper-pagination {
+  position: absolute;
+  left: 20px !important;
+  /* move to left side */
+  top: 60% !important;
+  /* vertical center */
+  transform: translateY(-50%);
+  /* perfect vertical centering */
+  display: flex;
+  flex-direction: column;
+  /* stack bullets vertically */
+  gap: 10px;
+  /* spacing between dots */
+  z-index: 10;
+}
+
+/* Pagination bullets style */
+.heroSwiper .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: #fb3640;
+  /* inactive color */
+  opacity: 0.8;
+  border-radius: 50%;
+}
+
+/* Active bullet */
+.heroSwiper .swiper-pagination-bullet-active {
+  background: #fb3640 !important;
+  /* active color */
+  opacity: 1;
+}
+
+.heroSwiper .swiper-pagination {
+  pointer-events: none;
+  /* allow clicks to pass through */
+}
+
+.heroSwiper .swiper-pagination-bullet {
+  pointer-events: auto;
+  /* bullets themselves remain clickable */
+}
+
+/* Move pagination up slightly so it doesn’t overlap button */
+@media (max-width: 991px) {
+  .heroSwiper .swiper-pagination {
+    left: 100% !important;
+    top: auto !important;
+    bottom: 20px !important;
+    transform: translateX(-50%);
+    flex-direction: row;
+    /* horizontal bullets on mobile */
+    gap: 8px;
+  }
+}
+
+.address-link {
+  display: inline-block; 
+  color: white;
+  text-align: center; 
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1.5;
+  max-width: 100%; 
+}

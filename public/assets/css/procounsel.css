@@ -16456,7 +16456,8 @@ body.megamenu-popup-active .mobile-nav__content {
   position: absolute;
   right: 0;
   text-align: left;
-  top: 56%;
+  top: 50%;
+  /* top: 56%; */
   transform: translateY(-50%);
   width: 100%;
 }
@@ -16546,7 +16547,8 @@ body.megamenu-popup-active .mobile-nav__content {
 @media (max-width: 991px) {
   .main-slider-one__item {
     padding-top: 180px;
-    padding-bottom: 120px;
+    padding-bottom: 150px;
+    /* padding-bottom: 120px; */
   }
 }
 
@@ -19711,6 +19713,23 @@ body.megamenu-popup-active .mobile-nav__content {
   gap: 30px;
 }
 
+@media (min-width: 991px) {
+  .margin-about {
+    margin-top: 200px !important;
+  }
+}
+
+@media (max-width: 1800px) {
+  .feature-one {
+    margin-top: -120px;
+  }
+
+  .feature-one__item__title {
+    font-size: 24px;
+  }
+}
+
+
 @media (max-width: 1199px) {
   .about-one__content__box {
     flex-direction: column;
@@ -19727,6 +19746,14 @@ body.megamenu-popup-active .mobile-nav__content {
 }
 
 @media (max-width: 991px) {
+  .heroSwiper .swiper-pagination {
+    left: 94% !important;
+  }
+
+  .contact-one__form__bg-one {
+    bottom: 0;
+  }
+
   .about-one__content__box {
     flex-direction: row;
   }
@@ -19737,6 +19764,8 @@ body.megamenu-popup-active .mobile-nav__content {
 
   .feature-one {
     padding: 0px !important;
+    position: relative !important;
+    margin-top: 0;
   }
 
   .featured-position {
@@ -19859,6 +19888,7 @@ body.megamenu-popup-active .mobile-nav__content {
   .main-slider-one__overlay-two {
     bottom: -100px;
   }
+
   .main-slider-one__content {
     margin-top: -20px;
   }
@@ -19875,9 +19905,45 @@ body.megamenu-popup-active .mobile-nav__content {
     padding-top: 60px;
     padding-bottom: 40px;
   }
+
+  .owl-carousel .owl-stage-outer {
+    height: 89vh !important;
+    /* height: 89vh !important; */
+  }
+}
+
+@media (min-width: 430px) and (max-width: 576px) {
+  .owl-carousel .owl-stage-outer {
+    height: 100vh !important;
+    /* height: 70vh !important; */
+  }
+
+  .main-slider-one__carousel {
+    min-height: 100vh;
+    /* min-height: 70vh; */
+  }
+}
+
+@media (min-width: 320px) and (max-width: 429px) {
+  .owl-carousel .owl-stage-outer {
+    height: 70vh !important;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 576px) {
+  .heroSwiper .swiper-pagination {
+    left: 92% !important;
+  }
+
+  .footer-widget__text {
+    font-size: 16px !important;
+  }
+
+  .procounsel-btn {
+    font-size: 15px !important;
+    white-space: nowrap;
+  }
+
   .case-strategy-cards {
     flex-direction: column !important;
   }
@@ -19913,7 +19979,7 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 
   .main-slider-one__carousel {
-    min-height: 72vh;
+    min-height: 70vh;
     /* min-height: 93vh; */
   }
 
@@ -19924,7 +19990,8 @@ body.megamenu-popup-active .mobile-nav__content {
   .main-slider-one__bg {
     background-position: 75% !important;
   }
-   .contact-one__info__icon {
+
+  .contact-one__info__icon {
     margin-right: 12px;
   }
 

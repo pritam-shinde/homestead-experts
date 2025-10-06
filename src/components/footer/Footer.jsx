@@ -124,8 +124,8 @@ const Footer = () => {
                                         <i className="icon-pin"></i>
                                     </div>
                                     <div className="main-footer__info__location text-white">
-                                        <a href="https://maps.app.goo.gl/awwKM26kMFcT6YcRA"
-                                            target="_blank" rel="noopener noreferrer" className="text-white">
+                                        <a href="https://maps.app.goo.gl/awwKM26kMFcT6YcRA" 
+                                            target="_blank" rel="noopener noreferrer" className="text-white address-link">
                                             259 Nassau St. Suite 2 #552 <br />
                                             Princeton, NJ 08542
                                         </a>

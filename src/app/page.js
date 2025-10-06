@@ -1,6 +1,7 @@
 "use client";
 
 import Banner1 from "@/sections/home/Banner1";
+import Banner1Swiper from "@/sections/home/Banner1Swiper";
 import Banner4CaseStrategy from "@/sections/home/Banner4CaseStrategy";
 import Banner5CaseStudy from "@/sections/home/Banner5CaseStudy";
 import Banner8Contact from "@/sections/home/Banner8Contact";
@@ -74,7 +75,8 @@ export default function Home() {
 
       <div className="page-wrapper">
         {/* <!-- main-slider-start --> */}
-        <Banner1 />
+        {/* <Banner1 /> */}
+        <Banner1Swiper/>
 
         {/* <section className="feature-one">
           <div className="container" style={{ maxWidth: "1200px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)" }}>
