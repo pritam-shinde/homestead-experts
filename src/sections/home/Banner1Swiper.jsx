@@ -85,7 +85,7 @@ const Banner1Swiper = () => {
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
-        autoplay={{ delay: 5000, disableOnInteraction: false }}
+        // autoplay={{ delay: 5000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         className="heroSwiper"
       >
@@ -96,7 +96,7 @@ const Banner1Swiper = () => {
               <div className="main-slider-one__overlay-one"></div>
               <div className="content container p-0">
                 <h1 className="">{slide.title}</h1>
-                <p>{slide.text}</p>
+                <p style={{maxWidth:"700px"}}>{slide.text}</p>
                 <a href="#" className="procounsel-btn">
                   <i> Discover More</i>
                   <span> Discover More</span>
