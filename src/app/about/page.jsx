@@ -3,7 +3,6 @@
 import HammerIcon from "@/sections/icons/HammerIcon";
 import { useEffect } from "react";
 
-
 const About = () => {
     useEffect(() => {
         const scriptUrls = [
@@ -59,9 +58,7 @@ const About = () => {
                     </div>
                 </section>
 
-                <section className="about-four about-four-about" id="about"
-                    // style={{ background: "#0e222a" }}
-                    style={{ background: "url(assets/images/backgrounds/section-2-bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+                <section className="about-four about-four-about" id="about" style={{ background: "url(assets/images/backgrounds/section-2-bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
                     <div className="container">
                         <div className="row gutter-y-30">
                             <div className="col-xl-4 col-md-12">
@@ -150,11 +147,7 @@ const About = () => {
                     </div>
                 </section>
                 <section className="why-choose-four">
-                    <div
-                        className="why-choose-four__bg jarallax"
-                        data-jarallax
-                        data-speed="0.3"
-                        data-imgposition="50% -100%"
+                    <div className="why-choose-four__bg jarallax" data-jarallax data-speed="0.3" data-imgposition="50% -100%"
                         style={{ backgroundImage: "url(assets/images/backgrounds/bg_why_choose_us.jpg)", backgroundSize: "cover", backgroundPosition: "center" }}
                     ></div>
                     <div className="container">
@@ -221,8 +214,7 @@ const About = () => {
                                                 <span className="count-text" data-stop="35" data-speed="1500">5000+</span>
                                             </h3>
                                             <p className="why-choose-four__box__text">
-                                                Medical <br />
-                                                Exams
+                                                Medical <br /> Exams
                                             </p>
                                         </div>
                                         <div className="why-choose-four__box count-box">
@@ -238,8 +230,7 @@ const About = () => {
                                                 <span className="count-text" data-stop="90" data-speed="1500">10,000+</span>
                                             </h3>
                                             <p className="why-choose-four__box__text">
-                                                Vetted <br />
-                                                Experts
+                                                Vetted <br /> Experts
                                             </p>
                                         </div>
                                     </div>
