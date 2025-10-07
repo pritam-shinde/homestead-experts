@@ -425,7 +425,7 @@ h2 {
   -webkit-appearance: none;
   border: none;
   outline: none !important;
-  background-color: var(--procounsel-base, #c7954a);
+  background-color: var(--procounsel-base, #fb3640);
   /* background-color: var(--procounsel-base, #c7954a); */
   color: var(--procounsel-white, #fff);
   font-size: 16px;
@@ -3842,7 +3842,8 @@ h2 {
 
 .main-footer__top {
   padding-top: 120px;
-  padding-bottom: 113px;
+  padding-bottom: 60px;
+  /* padding-bottom: 113px; */
 }
 
 @media (max-width: 767px) {
@@ -19119,7 +19120,8 @@ body.megamenu-popup-active .mobile-nav__content {
 .feature-one__item__icon {
   display: flex;
   align-items: center;
-  font-size: 58px;
+  font-size: 54px;
+  /* font-size: 58px; */
   flex-shrink: 0;
   color: var(--procounsel-base, #c7954a);
   transform: scale(1);

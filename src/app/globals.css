@@ -111,10 +111,8 @@ a {
 }
 
 .small-plus {
-  font-size: 0.6em;
-  /* make + smaller */
-  vertical-align: super;
-  /* align like a superscript */
+  font-size: 0.6em; 
+  vertical-align: super; 
 }
 
 /* in your global CSS */
@@ -137,8 +135,7 @@ a {
     border-radius: 0 !important;
     left: auto;
     transform: none;
-    margin: 0 auto;
-    /* still centers within parent */
+    margin: 0 auto; 
   }
 
   .feature-one {
@@ -226,7 +223,6 @@ a {
   margin-bottom: 20px;
   font-weight: 400;
 }
-
 
 /* Base styles for all slides */
 .hero-slide {
@@ -327,16 +323,11 @@ a {
 .heroSwiper .swiper-pagination {
   position: absolute;
   left: 20px !important;
-  /* move to left side */
   top: 60% !important;
-  /* vertical center */
   transform: translateY(-50%);
-  /* perfect vertical centering */
   display: flex;
   flex-direction: column;
-  /* stack bullets vertically */
   gap: 10px;
-  /* spacing between dots */
   z-index: 10;
 }
 
@@ -344,8 +335,7 @@ a {
 .heroSwiper .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background: #fb3640;
-  /* inactive color */
+  background: #fb3640; 
   opacity: 0.8;
   border-radius: 50%;
 }
@@ -353,18 +343,15 @@ a {
 /* Active bullet */
 .heroSwiper .swiper-pagination-bullet-active {
   background: #fb3640 !important;
-  /* active color */
   opacity: 1;
 }
 
 .heroSwiper .swiper-pagination {
-  pointer-events: none;
-  /* allow clicks to pass through */
+  pointer-events: none; 
 }
 
 .heroSwiper .swiper-pagination-bullet {
-  pointer-events: auto;
-  /* bullets themselves remain clickable */
+  pointer-events: auto; 
 }
 
 /* Move pagination up slightly so it doesn’t overlap button */
@@ -375,7 +362,6 @@ a {
     bottom: 20px !important;
     transform: translateX(-50%);
     flex-direction: row;
-    /* horizontal bullets on mobile */
     gap: 8px;
   }
 }
@@ -389,3 +375,4 @@ a {
   line-height: 1.5;
   max-width: 100%; 
 }
+

@@ -70,10 +70,8 @@ const Header = () => {
                                                                                     <img src={demo.img} alt={demo.title} />
                                                                                     <div className="demo-one__btns">
                                                                                         {demo.links.map((link, k) => (
-                                                                                            <a key={k} href={link.href}
-                                                                                                className="procounsel-btn demo-one__btn"
-                                                                                                style={{ color: scrolled ? "#000000" : "#ffffff" }}
-                                                                                            >
+                                                                                            <a key={k} href={link.href} className="procounsel-btn demo-one__btn"
+                                                                                                style={{ color: scrolled ? "#000000" : "#ffffff" }}>
                                                                                                 <i>{link.label}</i>
                                                                                                 <span>{link.label}</span>
                                                                                             </a>

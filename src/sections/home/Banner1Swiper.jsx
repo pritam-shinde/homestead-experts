@@ -85,7 +85,7 @@ const Banner1Swiper = () => {
         spaceBetween={0}
         slidesPerView={1}
         loop={true}
-        // autoplay={{ delay: 5000, disableOnInteraction: false }}
+        autoplay={{ delay: 5000, disableOnInteraction: false }}
         pagination={{ clickable: true }}
         className="heroSwiper"
       >
@@ -107,9 +107,8 @@ const Banner1Swiper = () => {
         ))}
       </Swiper>
       <div className="feature-one ">
-        <div className="container featured-position"
-          //  style={{ maxWidth: "1250px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)" }}
-          style={{ maxWidth: "1250px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)", position: "absolute", margin: "0 auto", left: "50%", transform: "translateX(-50%)", top: "100%" }}
+        <div className="container featured-position" 
+          style={{ maxWidth: "1200px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)", position: "absolute", margin: "0 auto", left: "50%", transform: "translateX(-50%)", top: "100%" }}
         >
           <div className="feature-one__inner">
             <div className="row gutter-y-0">
