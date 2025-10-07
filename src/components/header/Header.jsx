@@ -123,7 +123,7 @@ const Header = () => {
                                 </div>
                                 <div>
                                     <span className="main-header__info__text" style={{ color: scrolled ? "#000000" : "#ffffff" }}>Call anytime</span>
-                                    <a href="tel:+3035550105" style={{ color: scrolled ? "#000000" : "#ffffff" }}>(303) 555-0105</a>
+                                    <a  href="tel:+18772443703" style={{ color: scrolled ? "#000000" : "#ffffff" }}>(877) 244-3703</a>
                                 </div>
                             </div>
                         </div>
