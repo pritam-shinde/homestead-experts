@@ -1,23 +1,18 @@
-
-
-
-
-
 const Banner5CaseStudy = () => {
     return (
         <>
             <section className="portfolio-one" id="caseStudy">
-                <div className="container">
+                <div className="container p-md-0">
                     <div className="sec-title ">
                         <h3 className="sec-title__title text-white text-start">
                             Experts In Every Specialty
                         </h3>
-                        <p className="about-one__content__text text-white mt-2">
+                        <p className="about-one__content__text text-white mt-2" style={{maxWidth:"650px"}}>
                             We connect attorneys with board-certified professionals and industry-leading specialists in every field, from medicine and engineering to finance, construction, technology, and more.
                         </p>
                     </div>
                 </div>
-                <div className="container">
+                <div className="container p-md-0">
                     <div className="portfolio-one__wrapper">
                         <div className="portfolio-one__item">
                             <img src="assets/images/portfolio/Medical-malpractice_02.jpg" alt="procounsel" />

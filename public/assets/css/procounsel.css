@@ -28,7 +28,8 @@
   --procounsel-base: #fb3640;
   /* --procounsel-base: #c7954a; */
   --procounsel-base-rgb: 199, 149, 74;
-  --procounsel-primary: #19223a;
+  --procounsel-primary: #0E222A;
+  /* --procounsel-primary: #19223a; */
   --procounsel-primary-rgb: 25, 34, 58;
   --procounsel-gray: #f1fcf9;
   --procounsel-gray-rgb: 241, 252, 249;
@@ -4282,7 +4283,7 @@ h2 {
 }
 
 .footer-widget__newsletter button[type=submit] {
-  background-color: var(--procounsel-primary, #19223a);
+  background-color: var(--procounsel-primary, #0E222A);
   width: 46px;
   height: 55px;
   border: none;
@@ -4549,7 +4550,8 @@ h2 {
   line-height: 28px;
   font-weight: 600;
   font-size: 16px;
-  color: var(--procounsel-primary, #19223a);
+  /* font-size: 16px; */
+  color: var(--procounsel-primary, #0E222A);
 }
 
 .contact-one__info__text a {
@@ -4631,11 +4633,11 @@ h2 {
 
 .contact-one__form .procounsel-btn {
   margin-top: 13px;
-  background-color: var(--procounsel-primary, #19223a);
+  background-color: var(--procounsel-primary, #0E222A);
 }
 
 .contact-one__form .procounsel-btn>i {
-  background-color: var(--procounsel-primary, #19223a);
+  background-color: var(--procounsel-primary, #0E222A);
 }
 
 .contact-one__form .procounsel-btn>span {

@@ -3,9 +3,9 @@ import { strategySteps } from "@/constants/strategySteps";
 const Banner4CaseStrategy = () => {
   return (
     <>
-      <section style={{ backgroundColor: "#0B1A22", color: "#fff", padding: "60px 0px 60px 0px", position: "relative", overflow: "hidden" }} className="case-strategy">
+      <section style={{ backgroundColor: "#0E222A", color: "#fff", padding: "60px 0px 60px 0px", position: "relative", overflow: "hidden" }} className="case-strategy">
         {/* <div className="container-fluid case-strategy-container"> */}
-        <div className="container">
+        <div className="container p-md-0">
           <div className="row mb-5">
             <h3 className="sec-title__title mb-2 text-white">
               End-to-End Support for <br /> Your Case Strategy

@@ -7,9 +7,9 @@ const Banner8Contact = () => {
         <div style={{ transform: "rotateY(180deg)", width: "100%", position: "relative", marginBottom: "20px", marginTop: "8px" }}>
           <div className="tailored-redline" style={{ position: "unset", height: "14px" }}></div>
         </div>
-        <div className="contact-one__bg" style={{ background: "#0B1A22" }}></div>
+        <div className="contact-one__bg" style={{ background: "#0E222A" }}></div>
         <div className="contact-one__overlay"></div>
-        <div className="container">
+        <div className="container p-md-0">
           <div className="contact-one__wrapper">
             <div className="row">
               <div className="col-xl-6">
@@ -20,7 +20,7 @@ const Banner8Contact = () => {
                     <span> Your Expert</span>{" "}
                   </h3>
 
-                  <p className="contact-one__info__text text-white font-Merriweather"> Just a few details will get us started.</p>
+                  <p className="contact-one__info__text text-white font-Merriweather" style={{ fontSize: "clamp(18px,3vw,20px)" }}> Just a few details will get us started.</p>
 
                 </div>
 
@@ -64,8 +64,7 @@ const Banner8Contact = () => {
                       </div>
 
                       <div className="contact-one__info__content">
-                        <p
-                          className="contact-one__info__text"
+                        <p className="contact-one__info__text"
                           style={{
                             display: "flex",
                             flexDirection: "column",

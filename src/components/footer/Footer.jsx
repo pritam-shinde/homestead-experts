@@ -55,7 +55,7 @@ const Footer = () => {
         <footer className="main-footer">
             <div className="main-footer__bg" style={{ backgroundImage: "url('/assets/images/backgrounds/footer-bg.png')" }}></div>
             <div className="main-footer__top">
-                <div className="container">
+                <div className="container p-md-0">
                     <div className="row">
                         {/* Logo + About */}
                         <div className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="00ms">

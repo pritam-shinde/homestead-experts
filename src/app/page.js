@@ -78,56 +78,16 @@ export default function Home() {
         {/* <Banner1 /> */}
         <Banner1Swiper />
 
-        {/* <section className="feature-one">
-          <div className="container" style={{ maxWidth: "1200px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)" }}>
-            <div className="feature-one__inner">
-              <div className="row gutter-y-0">
-                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
-                  <div className="feature-one__item ">
-                    <div className="feature-one__item__icon text-white">
-                      <i className="icon-calendar"></i>
-                    </div>
-                    <h3 className="feature-one__item__title">
-                      <Link href="#" className="text-white">Find Your <br /> Expert Witness </Link>
-                    </h3>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
-                  <div className="feature-one__item feature-one__item--border-left justify-content-center">
-                    <div className="feature-one__item__icon text-white">
-                      <i className="icon-payment"></i>
-                    </div>
-                    <h3 className="feature-one__item__title">
-                      <Link href="#" className="text-white"> Get a Free <br /> Case Assessment</Link>
-                    </h3>
-                  </div>
-                </div>
-                <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">
-                  <div className="feature-one__item feature-one__item--border-left justify-content-end">
-                    <div className="feature-one__item__icon text-white">
-                      <i className="icon-advice"></i>
-                    </div>
-                    <h3 className="feature-one__item__title">
-                      <Link href="#" className="text-white"> Join Our Expert <br /> Network</Link>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </section> */}
-
-  <section
+        <section
           className="about-one "
           id="about"
           style={{
             background: "url(assets/images/backgrounds/section-2-1-bg.png)", backgroundRepeat: "no-repeat",
-            backgroundSize: "160% 90%", backgroundPosition: "right center",
-            backgroundColor: "#0B1A22",
+            backgroundSize: "170% 90%", backgroundPosition: "right center",
+            backgroundColor: "#0E222A",
             // backgroundColor: "#050d22",
           }}>
-          <div className="container">
+          <div className="container p-md-0">
             <div className="row margin-about">
               <div className="col-lg-9 wow fadeInRight" data-wow-delay="300ms">
                 <div className="about-one__inner">
@@ -141,12 +101,12 @@ export default function Home() {
                       <h3 className="sec-title__title bw-split-in-up">
                         Experts You Can <span> Build On</span>
                       </h3>
-                      <h4  className="font-Merriweather">
+                      <h4 className="font-Merriweather mt-2">
                         Credibility You Can Rely On, Coast to Coast
                       </h4>
                     </div>
 
-                    <p className="about-one__content__text" style={{maxWidth:"550px"}}>
+                    <p className="about-one__content__text" style={{ maxWidth: "550px" }}>
                       Every expert in our network is hand-vetted for
                       qualifications, credibility, and courtroom readiness. With
                       national reach and specialized knowledge across
@@ -183,11 +143,11 @@ export default function Home() {
           </div>
         </section>
         {/* <!-- Start about-one --> */}
-      
+
 
         {/*Tailored Section  */}
         <section className="tailored-section" id="tailored-background" >
-          <div className="container tailored-content margin-tailored">
+          <div className="container tailored-content margin-tailored p-md-0">
             <h3 className="sec-title__title text-white text-start">
               Tailored Search. Every Time.
             </h3>
@@ -200,9 +160,9 @@ export default function Home() {
             <Image src="/assets/images/backgrounds/red-line-09.png" alt="redline" width={2000} height={16} style={{ transform: "rotateY(180deg)", width: "100%", position: "relative" }} />
           </div>
 
-          <div className="container margin-tailored">
+          <div className="container margin-tailored p-md-0">
             <div className="">
-              <p className="tailored-para about-one__content__text" style={{ position: "relative", color: "#fff", maxWidth:"750px" }}>
+              <p className="tailored-para about-one__content__text" style={{ position: "relative", color: "#fff", maxWidth: "750px" }}>
                 We don&apos;t pull from static databases. When your case calls for
                 niche expertise, our team actively recruits and verifies new
                 experts on your behalf, managing outreach, vetting, and scheduling

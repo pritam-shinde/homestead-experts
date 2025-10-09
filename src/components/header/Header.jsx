@@ -37,7 +37,10 @@ const Header = () => {
         <>
             <header className="main-header sticky-header sticky-header--normal"
                 style={{
-                    position: scrolled ? "fixed" : "relative", top: 0, left: 0, width: "100%", zIndex: 999, backgroundColor: scrolled ? "#ffffff" : "#0E222A", boxShadow: scrolled ? "0 4px 12px rgba(0,0,0,0.15)" : "none", transition: "all 0.3s ease-in-out",
+                    position: scrolled ? "fixed" : "relative", top: 0, left: 0, width: "100%", zIndex: 999,
+                     backgroundColor: scrolled ? "#ffffff" : "#0E222A",
+                    //  backgroundColor: scrolled ? "#ffffff" : "#0E222A",
+                      boxShadow: scrolled ? "0 4px 12px rgba(0,0,0,0.15)" : "none", transition: "all 0.3s ease-in-out",
                 }}>
                 <div className="container-fluid">
                     <div className="main-header__inner" style={{ width: "100%", margin: 0, gap: "32px" }}>
