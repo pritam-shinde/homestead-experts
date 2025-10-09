@@ -14,13 +14,13 @@ const Banner8Contact = () => {
             <div className="row">
               <div className="col-xl-6">
                 <div className="sec-title text-left">
-                  <h2 className="sec-title__title bw-split-in-up">
+                  <h3 className="sec-title__title bw-split-in-up">
                     <span className="text-white">Get Matched With</span>{" "}
                     <br />
                     <span> Your Expert</span>{" "}
-                  </h2>
+                  </h3>
 
-                  <p className="contact-one__info__text text-white"> Just a few details will get us started.</p>
+                  <p className="contact-one__info__text text-white font-Merriweather"> Just a few details will get us started.</p>
 
                 </div>
 

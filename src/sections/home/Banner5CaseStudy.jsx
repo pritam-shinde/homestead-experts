@@ -1,13 +1,17 @@
 
+
+
+
+
 const Banner5CaseStudy = () => {
     return (
         <>
             <section className="portfolio-one" id="caseStudy">
                 <div className="container">
                     <div className="sec-title ">
-                        <h2 className="sec-title__title text-white text-start">
+                        <h3 className="sec-title__title text-white text-start">
                             Experts In Every Specialty
-                        </h2>
+                        </h3>
                         <p className="about-one__content__text text-white mt-2">
                             We connect attorneys with board-certified professionals and industry-leading specialists in every field, from medicine and engineering to finance, construction, technology, and more.
                         </p>
@@ -96,6 +100,7 @@ const Banner5CaseStudy = () => {
 }
 
 export default Banner5CaseStudy
+
 
 // const Banner5CaseStudy = () => {
 //     return (

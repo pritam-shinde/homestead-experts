@@ -50,9 +50,8 @@ export default function Banner1() {
         ))}
       </div>
       <div className="feature-one ">
-        <div className="container featured-position"
-          //  style={{ maxWidth: "1250px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)" }}
-          style={{ maxWidth: "1250px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)", position: "absolute", margin: "0 auto", left: "50%", transform: "translateX(-50%)", top: "100%" }}
+        <div className="container featured-position" 
+          style={{ maxWidth: "1250px", width: "100%", zIndex: 10, backgroundColor: "#0E222A", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)", position: "absolute", margin: "0 auto", left: "50%", transform: "translateX(-50%)", top: "100%" }}
         >
           <div className="feature-one__inner">
             <div className="row gutter-y-0">

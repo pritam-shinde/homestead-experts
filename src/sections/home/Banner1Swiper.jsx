@@ -86,6 +86,7 @@ const Banner1Swiper = () => {
         slidesPerView={1}
         loop={true}
         autoplay={{ delay: 3000, disableOnInteraction: false }}
+        speed={1500} // 1.5s smooth transition speed
         pagination={{ clickable: true }}
         className="heroSwiper"
       >
@@ -96,7 +97,7 @@ const Banner1Swiper = () => {
               <div className="main-slider-one__overlay-one"></div>
               <div className="content container p-0">
                 <h1 className="">{slide.title}</h1>
-                <p style={{maxWidth:"700px"}}>{slide.text}</p>
+                <p style={{ maxWidth: "700px" }}>{slide.text}</p>
                 <a href="#" className="procounsel-btn">
                   <i> Discover More</i>
                   <span> Discover More</span>
@@ -107,9 +108,8 @@ const Banner1Swiper = () => {
         ))}
       </Swiper>
       <div className="feature-one ">
-        <div className="container featured-position" 
-          style={{ maxWidth: "1200px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)", position: "absolute", margin: "0 auto", left: "50%", transform: "translateX(-50%)", top: "100%" }}
-        >
+        <div className="container featured-position"
+          style={{ maxWidth: "1190px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)", position: "absolute", margin: "0 auto", left: "50%", transform: "translateX(-50%)", top: "100%" }}>
           <div className="feature-one__inner">
             <div className="row gutter-y-0">
               <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="00ms">

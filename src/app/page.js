@@ -76,7 +76,7 @@ export default function Home() {
       <div className="page-wrapper">
         {/* <!-- main-slider-start --> */}
         {/* <Banner1 /> */}
-        <Banner1Swiper/>
+        <Banner1Swiper />
 
         {/* <section className="feature-one">
           <div className="container" style={{ maxWidth: "1200px", width: "100%", zIndex: 10, backgroundColor: "#050d22", padding: "40px 40px 0", boxShadow: "0 4px 12px rgba(0,0,0,0.9)" }}>
@@ -118,8 +118,7 @@ export default function Home() {
 
         </section> */}
 
-        {/* <!-- Start about-one --> */}
-        <section
+  <section
           className="about-one "
           id="about"
           style={{
@@ -130,7 +129,7 @@ export default function Home() {
           }}>
           <div className="container">
             <div className="row margin-about">
-              <div className="col-lg-12 wow fadeInRight" data-wow-delay="300ms">
+              <div className="col-lg-9 wow fadeInRight" data-wow-delay="300ms">
                 <div className="about-one__inner">
                   <div className="about-one__content">
                     <div className="sec-title text-left">
@@ -139,12 +138,15 @@ export default function Home() {
                         Experts You Can Build On
                       </div> */}
 
-                      <h2 className="sec-title__title bw-split-in-up">
-                        Credibility You Can Rely On, <span>Coast to Coast</span>
-                      </h2>
+                      <h3 className="sec-title__title bw-split-in-up">
+                        Experts You Can <span> Build On</span>
+                      </h3>
+                      <h4  className="font-Merriweather">
+                        Credibility You Can Rely On, Coast to Coast
+                      </h4>
                     </div>
 
-                    <p className="about-one__content__text">
+                    <p className="about-one__content__text" style={{maxWidth:"550px"}}>
                       Every expert in our network is hand-vetted for
                       qualifications, credibility, and courtroom readiness. With
                       national reach and specialized knowledge across
@@ -180,26 +182,27 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* <!-- Start about-one --> */}
+      
 
         {/*Tailored Section  */}
         <section className="tailored-section" id="tailored-background" >
-          {/* <div className="tailored-bg"></div> */}
-          <div className="container tailored-content">
-            <h2 className="sec-title__title text-white text-start">
+          <div className="container tailored-content margin-tailored">
+            <h3 className="sec-title__title text-white text-start">
               Tailored Search. Every Time.
-            </h2>
-            <h4 className="tailored-subtitle text-start">
+            </h3>
+            <h4 className="tailored-subtitle text-start font-Merriweather">
               Custom Recruitment for Complex Matters
             </h4>
           </div>
 
-          <div className="tailored-redline1 test" style={{ position: "relative", objectFit:"cover" }}>
-            <Image src="/assets/images/backgrounds/red-line-09.png" alt="redline" width={2000} height={16}  style={{ transform: "rotateY(180deg)", width: "100%", position: "relative"  }} />
+          <div className="tailored-redline1 test" style={{ position: "relative", objectFit: "cover" }}>
+            <Image src="/assets/images/backgrounds/red-line-09.png" alt="redline" width={2000} height={16} style={{ transform: "rotateY(180deg)", width: "100%", position: "relative" }} />
           </div>
 
-          <div className="container">
-            <div className="tailored-para">
-              <p className="tailored-para" style={{position:"relative", color:"#fff"}}>
+          <div className="container margin-tailored">
+            <div className="">
+              <p className="tailored-para about-one__content__text" style={{ position: "relative", color: "#fff", maxWidth:"750px" }}>
                 We don&apos;t pull from static databases. When your case calls for
                 niche expertise, our team actively recruits and verifies new
                 experts on your behalf, managing outreach, vetting, and scheduling

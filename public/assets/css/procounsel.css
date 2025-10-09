@@ -15,7 +15,7 @@
 --------------------------------------------------------------*/
 :root {
   --procounsel-font: "Montserrat", sans-serif;
-  --procounsel-heading-font: "Montserrat", serif;
+  --procounsel-heading-font: "Montserrat", sans-serif;
   /* --procounsel-font: "Plus Jakarta Sans", sans-serif; */
   /* --procounsel-heading-font: "Kinatika", serif; */
   --procounsel-special-font: "Whisper", cursive;
@@ -46,7 +46,7 @@
   --procounsel-border-color-rgb: 217, 217, 217;
   --procounsel-letter-space: 0.1em;
   --procounsel-letter-space-xl: 0.2em;
-  --homestead-bg: #0e222a;
+  --homestead-bg: #0B1A22;
 }
 
 /*--------------------------------------------------------------
@@ -267,6 +267,14 @@
 /*--------------------------------------------------------------
 # Common
 --------------------------------------------------------------*/
+.font-Merriweather {
+  font-family: "Merriweather", serif !important;
+}
+
+.font-Montserrat {
+  font-family: "Montserrat", sans-serif !important;
+}
+
 body {
   font-family: var(--procounsel-font, "Montserrat", sans-serif);
   /* font-family: var(--procounsel-font, "Plus Jakarta Sans", sans-serif); */
@@ -317,7 +325,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--procounsel-heading-font, "Montserrat", serif);
+  font-family: var(--procounsel-heading-font, "Montserrat", sans-serif) !important;
   color: var(--procounsel-black, #0e0b06);
   font-weight: 700 !important;
 }
@@ -4060,7 +4068,8 @@ h2 {
   margin: 0;
   font-family: var(--procounsel-heading-font, "Marcellus", serif);
   font-weight: 400;
-  font-size: 22px;
+  font-size: clamp(16px, 3vw, 18px);
+  /* font-size: 22px; */
   line-height: 30px;
   color: var(--procounsel-white, #fff);
 }
@@ -6160,7 +6169,7 @@ h2 {
   text-transform: uppercase !important;
   position: relative;
   transition: all 500ms ease;
-  font-family: var(--procounsel-heading-font, "Montserrat", serif);
+  font-family: var(--procounsel-heading-font, "Montserrat", sans-serif);
 }
 
 .main-menu .main-menu__list>li.current>a,
@@ -16622,7 +16631,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .main-slider-one__title {
   color: var(--procounsel-white, #fff);
-  font-family: "Montserrat", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 90px;
   line-height: 100px;
   font-weight: 400;
@@ -19703,7 +19712,8 @@ body.megamenu-popup-active .mobile-nav__content {
 .about-one__content__text {
   margin: 0 0 31px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: clamp(16px, 3vw, 18px);
+  /* font-size: 16px; */
   line-height: 30px;
 }
 
@@ -19744,6 +19754,10 @@ body.megamenu-popup-active .mobile-nav__content {
   .case-strategy-container {
     margin: 0px 25px !important;
     /* margin: 0px 85px !important; */
+  }
+
+  .margin-tailored {
+    margin-left: 0 !important;
   }
 }
 
