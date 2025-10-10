@@ -36,7 +36,7 @@ a {
 }
 
 .bg-navy-color {
-  background-color: #0B1A22 !important;
+  background-color: #0E222A !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -60,7 +60,7 @@ a {
   -webkit-appearance: none;
   border: none;
   outline: none !important;
-  background-color: #19223a;
+  background-color: #0E222A;
   /* background-color: var(--procounsel-base, #c7954a); */
   color: var(--procounsel-white, #fff);
   font-size: 16px;
@@ -380,4 +380,8 @@ a {
 
 .margin-tailored{
   margin-left: 40% !important;
+}
+
+.field.hs-form-field label {
+    color: white !important;
 }

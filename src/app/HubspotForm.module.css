@@ -1,0 +1,100 @@
+.container {
+    max-width: 500px;
+    margin: 2rem auto;
+    background: red;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container input,
+.container textarea,
+.container select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.container input[type="submit"],
+.container button {
+    background-color: #1a73e8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container input[type="submit"]:hover,
+.container button:hover {
+    background-color: #1666c1;
+}
+
+.container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+/* styles/globals.css or component CSS module */
+#hubspotForm {
+    max-width: 500px; 
+    margin: 2rem auto;
+    background: #f8f8f8;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs inside the HubSpot form */
+#hubspotForm input,
+#hubspotForm textarea,
+#hubspotForm select {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+/* Button styling */
+#hubspotForm input[type="submit"],
+#hubspotForm button {
+    background-color: #1a73e8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#hubspotForm input[type="submit"]:hover,
+#hubspotForm button:hover {
+    background-color: #1666c1;
+}
+
+/* Labels */
+#hubspotForm label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.hs-form-ed501a21-d350-4fa5-8041-d60eb61cfd79_3a874ff7-d111-4b92-bdf0-9ce0c2805b74 .hs-form-field label:not(.hs-error-msg){
+    color: #fff !important;
+}
+
+.hs-form-ed501a21-d350-4fa5-8041-d60eb61cfd79_72d42117-65e9-4737-af1e-beb285d7b09b .hs-form-field label:not(.hs-error-msg){
+    color: #fff !important;
+}
+
+.field.hs-form-field label {
+    color: white !important;
+}

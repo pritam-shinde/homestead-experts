@@ -3845,8 +3845,7 @@ h2 {
 --------------------------------------------------------------*/
 .main-footer {
   position: relative;
-  background-color: #0B1A22;
-  /* background-color:#0e222a; */
+  background-color: #0E222A; 
 }
 
 .main-footer__top {
@@ -4015,8 +4014,7 @@ h2 {
 .main-footer__bottom {
   text-align: center;
   position: relative;
-  background-color: #0B1A22;
-  /* background-color: #0e222a; */
+  background-color: #0E222A; 
   padding: 25px 0;
 }
 
@@ -4438,6 +4436,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   background-color: #050d22;
+  /* border:1px solid #6b6161; */
   /* background-color: var(--procounsel-white, #fff); */
 }
 
@@ -7236,7 +7235,7 @@ body.megamenu-popup-active .mobile-nav__content {
 .why-choose-four {
   padding: 120px 0;
   position: relative;
-  background-color: var(--procounsel-primary, #19223a);
+  background-color: var(--procounsel-primary, #0E222A); 
 }
 
 @media (max-width: 767px) {
@@ -21343,7 +21342,7 @@ body.megamenu-popup-active .mobile-nav__content {
   counter-reset: count;
   padding: 120px 0;
   padding-bottom: 220px;
-  background-color: var(--procounsel-primary, #19223a);
+  background-color: var(--procounsel-primary, #0E222A);
 }
 
 @media (max-width: 767px) {

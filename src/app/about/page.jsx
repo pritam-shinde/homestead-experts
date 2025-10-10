@@ -57,8 +57,12 @@ const About = () => {
                         </ul>
                     </div>
                 </section>
+                
+                {/* <div className="container">
+                    <HubspotForm />
+                </div> */}
 
-                <section className="about-four about-four-about" id="about" style={{ background: "url(assets/images/backgrounds/section-2-bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+                <section className="about-four about-four-about" id="about" style={{ background: "url(assets/images/backgrounds/section-2-bg.png)", backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center",backgroundColor:"#0E222A" }}>
                     <div className="container">
                         <div className="row gutter-y-30">
                             <div className="col-xl-4 col-md-12">
@@ -242,7 +246,7 @@ const About = () => {
                 {/* <Banner6Team /> */}
                 {/* <Testimonials /> */}
 
-                <section className="cta-three ">
+                {/* <section className="cta-three ">
                     <div className="container wow fadeInUp" data-wow-delay="200ms">
                         <div className="cta-three__inner">
                             <div className="cta-three__inner__shape" style={{ backgroundImage: "url(assets/images/shapes/cta-shape-3-1.png)" }}></div>
@@ -257,7 +261,7 @@ const About = () => {
                             </a>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <div className="barnds-one barnds-one-about bg-navy-color">
                     <div className="container">
