@@ -22,17 +22,18 @@ export const sliderData = [
     ),
     text: (
       <>
-        <span className="d-inline d-lg-none">
+        <p style={{marginBottom:"0px"}} >
           Homestead connects attorneys with leading expert
-          <br />
+          <br className="d-none d-lg-inline" />
           witnesses across every discipline.
-          <br />
+        </p>
+        <p style={{marginTop:"10px", marginBottom:"20px"}}>
           Rigorously vetted, court-tested, and ready when you are.
-        </span>
-        <span className="d-none d-lg-inline">
+        </p>
+        {/* <span className="d-none d-lg-inline">
           Homestead connects attorneys with leading expert witnesses across every discipline.
           Rigorously vetted, court-tested, and ready when you are.
-        </span>
+        </span> */}
       </>
     ),
   },
@@ -48,15 +49,13 @@ export const sliderData = [
     ),
     text: (
       <>
-        <span className="d-block d-lg-inline">
+        <p className="">
           Your case can’t wait — neither should your search
-        </span>
-        <span className="d-block d-lg-inline">
+        <br className="d-none d-lg-inline" />
           for the right expert. We deliver tailored matches quickly,
-        </span>
-        <span className="d-block d-lg-inline">
+        <br className="d-none d-lg-inline" />
           without sacrificing rigor or credibility.
-        </span>
+        </p>
       </>
     ),
   },
@@ -68,11 +67,11 @@ export const sliderData = [
       </>
     ),
     text: (
-      <>
-        Our network of experts spans every field and jurisdiction. From medicine
-        and engineering to finance and construction. <br />
+      <p>
+        Our network of experts spans every field and jurisdiction. <br className="d-none d-lg-inline" /> From medicine
+        and engineering to finance and construction. <br className="d-none d-lg-inline" />
         Wherever your case takes you, we connect you with the right expert.
-      </>
+      </p>
     ),
   },
 ];
@@ -97,11 +96,38 @@ const Banner1Swiper = () => {
               <div className="main-slider-one__overlay-one"></div>
               <div className="content container p-md-0">
                 <h1 className="">{slide.title}</h1>
-                <p style={{ maxWidth: "700px" }}>{slide.text}</p>
-                <a href="#" className="procounsel-btn">
-                  <i> Discover More</i>
-                  <span> Discover More</span>
-                </a>
+                <div
+                // style={{ maxWidth: "520px" }}
+                >{slide.text}</div>
+                {/* <div className="d-flex justify-content-start align-items-center gap-2">
+                  <div>
+                    <a href="#" className="procounsel-btn">
+                      <i> REQUEST AN EXPERT</i>
+                      <span> REQUEST AN EXPERT</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" className="procounsel-btn">
+                      <i> BECOME AN EXPERT</i>
+                      <span> BECOME AN EXPERT</span>
+                    </a>
+                  </div>
+                </div> */}
+
+                <div className="d-flex flex-wrap justify-content-start align-items-center gap-4">
+                  <div>
+                    <a href="#" className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start">
+                      <i>REQUEST AN EXPERT</i>
+                      <span className="">REQUEST AN EXPERT</span>
+                    </a>
+                  </div>
+                  <div>
+                    <a href="#" className="procounsel-btn d-flex flex-column flex-sm-row text-center text-sm-start">
+                      <i>BECOME AN EXPERT</i>
+                      <span className="">BECOME AN EXPERT</span>
+                    </a>
+                  </div>
+                </div>
               </div>
             </div>
           </SwiperSlide>

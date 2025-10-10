@@ -5,7 +5,7 @@
             title: "Intake & Case Assessment",
             text: (
                 <>
-                    We start by understanding your case and the type of expertise you need. Our team listens carefully and gathers key details to ensure the search is targeted and precise.
+                    We start by understanding your case and the type <br className="d-none d-lg-inline" /> of expertise you need. Our team listens carefully <br className="d-none d-lg-inline" /> and gathers key details to ensure the search is <br className="d-none d-lg-inline" /> targeted and precise.
                 </>
             ),
         },
@@ -15,7 +15,7 @@
             title: "Expert Search & Vetting",
             text: (
                 <>
-                    We identify and recruit the best-fit experts, not just from a database, but through active outreach when needed. Each candidate is vetted for qualifications, relevance, and credibility.
+                    We identify and recruit the best-fit experts, not just <br className="d-none d-lg-inline" /> from a database, but through active outreach when <br className="d-none d-lg-inline" /> needed. Each candidate is vetted for qualifications, <br className="d-none d-lg-inline" /> relevance, and credibility.
                 </>
             ),
         },
@@ -25,7 +25,7 @@
             title: "Introductions & Coordination",
             text: (
                 <>
-                    You’re introduced to qualified experts and can hold preliminary calls to assess fit. We manage all scheduling, document sharing, and communication along the way.
+                    You’re introduced to qualified experts and can hold <br className="d-none d-lg-inline" /> preliminary calls to assess fit. We manage all <br className="d-none d-lg-inline" /> scheduling, document sharing, and communication <br className="d-none d-lg-inline" /> along the way.
                 </>
             ),
         },
@@ -35,7 +35,7 @@
             title: "Ongoing Support Through Case Close",
             text: (
                 <>
-                    We stay involved through report writing, deposition, and trial. Whether it’s follow-up documentation or expert availability, we ensure nothing falls through the cracks.
+                    We stay involved through report writing, deposition, <br className="d-none d-lg-inline" /> and trial. Whether it’s follow-up documentation or <br className="d-none d-lg-inline" /> expert availability, we ensure nothing falls through <br className="d-none d-lg-inline" /> the cracks.
                 </>
             ),
         },

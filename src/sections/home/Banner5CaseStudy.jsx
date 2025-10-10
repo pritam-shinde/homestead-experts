@@ -7,8 +7,10 @@ const Banner5CaseStudy = () => {
                         <h3 className="sec-title__title text-white text-start">
                             Experts In Every Specialty
                         </h3>
-                        <p className="about-one__content__text text-white mt-2" style={{maxWidth:"650px"}}>
-                            We connect attorneys with board-certified professionals and industry-leading specialists in every field, from medicine and engineering to finance, construction, technology, and more.
+                        <p className="about-one__content__text text-white mt-2" 
+                        // style={{maxWidth:"650px"}}
+                        >
+                            We connect attorneys with board-certified professionals and industry-leading <br className="d-none d-lg-inline" /> specialists in every field, from medicine and engineering to finance, construction, <br className="d-none d-lg-inline" /> technology, and more.
                         </p>
                     </div>
                 </div>

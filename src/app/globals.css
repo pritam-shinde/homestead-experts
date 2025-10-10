@@ -263,7 +263,7 @@ a {
   font-size: 3.5rem;
   font-family: "Montserrat", serif;
   line-height: 1.2;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
 }
 
 .hero-slide p {
@@ -379,9 +379,78 @@ a {
 }
 
 .margin-tailored{
-  margin-left: 40% !important;
+  margin-left: 30% !important;
 }
 
 .field.hs-form-field label {
     color: white !important;
+}
+
+.header-btn {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border: none;
+  outline: none !important;
+  background-color:#fff;
+  /* background-color: var(--procounsel-base, #c7954a); */
+  color: black;
+  font-size: 16px;
+  font-weight: 800;
+  /* font-weight: 600; */
+  transition: 500ms;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+.header-btn>i {
+  padding: 13px 40px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 300px;
+  transition: transform 500ms ease;
+  transform-origin: top center;
+  transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
+}
+
+.header-btn:hover>i {
+  transform-origin: bottom center;
+  transform: translateY(-100%) translateZ(150px) scaleY(0) rotateX(90deg);
+}
+
+.header-btn>span {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 700ms ease, top 700ms ease;
+  background-color: var(--procounsel-primary, #19223a);
+  transform: translateY(0%) translateZ(150px) scaleY(0) rotateX(90deg);
+  perspective: 300px;
+  transform-origin: bottom center;
+}
+
+.header-btn:hover>span {
+  transition: transform 500ms ease, top 500ms ease;
+  transform: translateY(0%) translateZ(0px) scaleY(1) rotateX(0deg);
+}
+
+.main-header__btn .header-btn:hover {
+  color: #fff;
+  /* color: var(--procounsel-black, #0e0b06); */
+}
+
+.main-header--three .main-header__btn .header-btn:hover {
+  color: var(--procounsel-white, #fff);
+  overflow: hidden;
+  /* color: var(--procounsel-white, #fff); */
 }

@@ -52,7 +52,7 @@ const Header = () => {
                         </div>
 
                         {/* Navigation */}
-                        <nav className="main-header__nav main-menu">
+                        <nav className="main-header__nav main-menu" style={{display:"flex",flex:1,justifyContent:"end", marginRight:"60px"}}>
                             <ul className="main-menu__list">
                                 {menuData.map((item, idx) => (
                                     <li key={idx} className={item.children || item.megaMenu ? "dropdown" : ""}>
@@ -112,12 +112,12 @@ const Header = () => {
                                 <span style={{ backgroundColor: scrolled ? "#000000" : "#ffffff" }}></span>
                             </div>
                             <div className="main-header__btn">
-                                <a href="#" className="procounsel-btn text-uppercase">
-                                    <i>Get a Quote</i>
-                                    <span>Get a Quote</span>
+                                <a href="#" className="procounsel-btn text-uppercase" style={{borderRadius:"35px",overflow:"hidden"}}>
+                                    <i>FREE CONSULTATION</i>
+                                    <span>FREE CONSULTATION</span>
                                 </a>
                             </div>
-                            <div className="main-header__info">
+                            {/* <div className="main-header__info">
                                 <div className="main-header__info__icon">
                                     <i className="icon-phone-1"></i>
                                     <span className="main-header__info__icon__zoom">
@@ -128,7 +128,7 @@ const Header = () => {
                                     <span className="main-header__info__text" style={{ color: scrolled ? "#000000" : "#ffffff" }}>Call anytime</span>
                                     <a  href="tel:+18772443703" style={{ color: scrolled ? "#000000" : "#ffffff" }}>(877) 244-3703</a>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

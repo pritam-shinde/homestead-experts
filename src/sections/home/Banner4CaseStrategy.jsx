@@ -6,34 +6,36 @@ const Banner4CaseStrategy = () => {
       <section style={{ backgroundColor: "#0E222A", color: "#fff", padding: "60px 0px 60px 0px", position: "relative", overflow: "hidden" }} className="case-strategy">
         {/* <div className="container-fluid case-strategy-container"> */}
         <div className="container p-md-0">
-          <div className="row mb-5">
+          <div className="mb-5">
             <h3 className="sec-title__title mb-2 text-white">
-              End-to-End Support for <br /> Your Case Strategy
+              End-to-End Support for <br className="d-none d-lg-inline" /> Your Case Strategy
             </h3>
             <h5 style={{ color: "#fff", fontWeight: "400", marginBottom: "20px" }} className="mt-2 font-Merriweather">
               Streamlined Case Management That Keeps You Moving Forward
             </h5>
 
-            <div className="col-12 col-lg-7">
-              <p className="about-one__content__text">
+            <div>
+              <p className="about-one__content__text mt-4">
                 From expert selection to courtroom support, Homestead is built
-                to serve your firm at every stage. We don’t just match you with
-                a qualified expert, we manage the process with precision,
+                to serve your firm at <br className="d-none d-lg-inline" /> every stage. We don’t just match you with
+                a qualified expert, we manage the process <br className="d-none d-lg-inline" /> with precision,
                 insight, and discretion.
-                <br />
-                <br />
+              </p>
+              <p className="about-one__content__text">
                 Our team goes beyond static directories, actively sourcing the
-                right experts, handling coordination, and ensuring every detail
-                is buttoned up so you can stay focused on winning the case, not
+                right experts, handling <br className="d-none d-lg-inline" /> coordination, and ensuring every detail
+                is buttoned up so you can stay focused on <br className="d-none d-lg-inline" /> winning the case, not
                 chasing down logistics.
               </p>
 
-              <div className="row" style={{ maxWidth: "680px", width: "100%" }}>
+              <div className="row" 
+              // style={{ maxWidth: "680px", width: "100%" }}
+              >
                 {strategySteps.map((step, index) => (
                   <div className="col-12 col-md-12 mt-4 pe-0" key={index}>
                     <div
                       className="case-strategy-cards"
-                      style={{ display: "flex", gap: "30px", justifyContent: "center", alignItems: "center", }}                    >
+                      style={{ display: "flex", gap: "30px",  alignItems: "center", }}                    >
                       <div
                         style={{
                           width: "80px", height: "80px", display: "flex", alignItems: "center", justifyContent: "center",
@@ -41,7 +43,7 @@ const Banner4CaseStrategy = () => {
                         }}>
                         <img src={step.img} alt={step.alt} width="80" height="80" />
                       </div>
-                      <div>
+                      <div >
                         <h5 style={{ fontWeight: "600", fontSize: "clamp(18px,4vw,22px)", lineHeight: "26px", marginBottom: "10px", color: "#fff", }}>
                           {step.title}
                         </h5>

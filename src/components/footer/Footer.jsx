@@ -6,20 +6,30 @@ const Footer = () => {
             title: "Services",
             delay: "200ms",
             links: [
-                { label: "What We Offer", href: "#" },
-                { label: "Our Story", href: "#" },
-                { label: "Latest News", href: "#" },
-                { label: "Help Center", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
             ],
         },
         {
             title: "Quick Links",
             delay: "100ms",
             links: [
-                { label: "About Us", href: "#" },
-                { label: "Meet the Lawyer", href: "#" },
-                { label: "Expert Witness", href: "#" },
-                { label: "Contact", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
+            ],
+        },
+        {
+            title: "Get In Touch",
+            delay: "100ms",
+            links: [
+                { label: "Lorem ipsum", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
+                { label: "Lorem ipsum", href: "#" },
             ],
         },
 
@@ -58,7 +68,7 @@ const Footer = () => {
                 <div className="container p-md-0">
                     <div className="row">
                         {/* Logo + About */}
-                        <div className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="00ms">
+                        <div className="col-md-6 col-xl-5 wow fadeInUp" data-wow-delay="00ms">
                             <div className="footer-widget footer-widget--about">
                                 <a href="#" className="footer-widget__logo">
                                     <Image src="/assets/images/logos/homestead-experts-logo-light.png" width={250} height={40}
@@ -72,8 +82,9 @@ const Footer = () => {
                         </div>
 
                         {/* Dynamic Link Sections */}
-                        {footerLinks.map((section, index) => (
-                            <div key={index} className="col-md-6 col-xl-2 wow fadeInUp" data-wow-delay={section.delay}>
+                        <div className="col-md-6 col-xl-7"> <div className="row">
+{footerLinks.map((section, index) => (
+                            <div key={index} className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay={section.delay}>
                                 <div className="footer-widget footer-widget--links">
                                     <h2 className="footer-widget__title">{section.title}</h2>
                                     <ul className="list-unstyled footer-widget__links">
@@ -86,9 +97,12 @@ const Footer = () => {
                                 </div>
                             </div>
                         ))}
+                        </div>
+                        </div>
+                        
 
                         {/* Newsletter */}
-                        <div className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="300ms">
+                        {/* <div className="col-md-6 col-xl-4 wow fadeInUp" data-wow-delay="300ms">
                             <div className="footer-widget footer-widget--mail">
                                 <h2 className="footer-widget__title">
                                     Signup for our latest news
@@ -109,7 +123,7 @@ const Footer = () => {
                                 </div>
                                 <div className="mc-form__response"></div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
 
                     {/* Contact + Social */}

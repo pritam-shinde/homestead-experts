@@ -43,16 +43,31 @@ const Banner8Contact = () => {
                       <div className="contact-one__info__content">
                         <div className="contact-one__info__text ">
                           <p className="main-footer__info__text">
-                            <a href="tel:+18772443703" aria-label="Call us at (877) 244-3703" className="text-white">
+                            <a href="tel:8772443703" aria-label="Call us at (877) 244-3703" className="text-white">
                               (877) 244-3703
                             </a>
                           </p>
                           <p className="main-footer__info__text">
-                            <a href="tel:+2195550114" aria-label="Call us at +21 9555-0114" className="text-white">
-                              +21 9555-0114
+                            <a href="tel:7327438003" aria-label="Call us at +21 9555-0114" className="text-white">
+                              (732) 743-8003
                             </a>
                           </p>
                         </div>
+                      </div>
+                    </li>
+                    <li className="contact-one__info__item" style={{ flex:1}}>
+                      <div className="contact-one__info__icon">
+                        <i className="icon-map-pin"></i>
+                        <span className="contact-one__info__icon__zoom">
+                          <i className="icon-map-pin"></i>
+                        </span>
+                      </div>
+
+                      <div className="contact-one__info__content">
+                     <p className="contact-one__info__text text-white">
+                          259 Nassau St. Suite 2 #552
+                          <br /> Princeton, NJ 08542
+                        </p>
                       </div>
                     </li>
                     <li className="contact-one__info__item">
@@ -62,45 +77,13 @@ const Banner8Contact = () => {
                           <i className="icon-glove"></i>
                         </span>
                       </div>
-
                       <div className="contact-one__info__content">
-                        <p className="contact-one__info__text"
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            gap: 0,
-                          }}
-                        >
-                          <a
-                            href="mailto:info@homesteadexperts.com"
-                            className="text-white"
-                          >
-                            info@homesteadexperts.com
-                          </a>
-                          {/* <br /> */}
-                          <a
-                            href="https://homesteadexperts.com/"
-                            className="text-white"
-                          >
-                            https://homesteadexperts.com/
-                          </a>
-                        </p>
-                      </div>
-                    </li>
-                    <li className="contact-one__info__item">
-                      <div className="contact-one__info__icon">
-                        <i className="icon-map-pin"></i>
-                        <span className="contact-one__info__icon__zoom">
-                          <i className="icon-map-pin"></i>
-                        </span>
-                      </div>
-                      <div className="contact-one__info__content">
+                        <a  href="mailto:info@homesteadexperts.com"
+                            className="text-white">
                         <p className="contact-one__info__text text-white">
-                          259 Nassau St. Suite 2 #552
-                          <br /> Princeton, NJ 08542
+                          info@homesteadexperts.com
                         </p>
+                        </a>
                       </div>
                     </li>
                   </ul>
